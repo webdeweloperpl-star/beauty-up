@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Up - Salon Kosmetyczny i Fryzjerski · Suwałki</title>
+  <meta name="description"
+    content="Beauty Up - salon kosmetyczno-fryzjerski w Suwałkach. Fryzjerstwo, paznokcie, brwi i rzęsy, makijaż i makijaż permanentny. 5.0 na Booksy, 263+ opinii.">
+  <meta name="theme-color" content="#B8934F">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Beauty Up",
+  "image": "hero.jpg",
+  "telephone": "+48508024343",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Piłsudskiego 11 lok. 2",
+    "addressLocality": "Suwałki",
+    "postalCode": "16-400",
+    "addressCountry": "PL"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "263"
+  }
+}
+</script>
+  <style>
+    /* ROOT */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #FAFAFA;
+      --white: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5a5a5a;
+      --accent: #B8934F;
+      --accent-dark: #93733D;
+      --border: rgba(184, 147, 79, 0.18);
+      --glass-bg: rgba(255, 255, 255, 0.62);
+      --glass-border: rgba(255, 255, 255, 0.55);
+      --glass-blur: blur(16px) saturate(160%);
+      --nav-h: 72px;
+      --ff-h: 'Cormorant Garamond', serif;
+      --ff-b: 'Raleway', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--ff-b);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      font-family: var(--ff-b);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.22s, color 0.22s, border-color 0.22s;
+      border: 1.5px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--text);
+    }
+
+    .btn-outline:hover {
+      background: var(--text);
+      color: #fff;
+    }
+
+    /* NAV - GLASS */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--border);
+      height: var(--nav-h);
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .nav-logo {
+      font-family: var(--ff-h);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 7px 16px;
+      white-space: nowrap;
+      margin-right: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .btn-nav {
+      font-family: var(--ff-b);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 11px 24px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 2px;
+      white-space: nowrap;
+      transition: background 0.22s;
+    }
+
+    .btn-nav:hover {
+      background: var(--accent-dark);
+    }
+
+    .nav-socials {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-soc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+
+    .nav-soc:hover {
+      color: var(--accent);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--text);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    .mmenu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      padding: 32px 24px 40px;
+      border-top: 1px solid var(--border);
+      position: fixed;
+      top: var(--nav-h);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+      z-index: 99;
+    }
+
+    .mmenu.open {
+      display: flex;
+    }
+
+    .mmenu-cta {
+      font-family: var(--ff-b);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 22px 0;
+      width: 85%;
+      text-align: center;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 2px;
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .mmenu-cta-ol {
+      font-family: var(--ff-b);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 22px 0;
+      width: 85%;
+      text-align: center;
+      background: transparent;
+      color: var(--text);
+      border: 1.5px solid var(--text);
+      border-radius: 2px;
+      margin-bottom: 28px;
+      letter-spacing: 0.04em;
+    }
+
+    .mmenu a:not(.mmenu-cta):not(.mmenu-cta-ol):not(.mmenu-soc) {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 18px 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mmenu-socials {
+      display: flex;
+      gap: 16px;
+      margin-top: auto;
+      padding-top: 32px;
+    }
+
+    .mmenu-soc {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .mmenu-soc:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      height: calc(100svh - var(--nav-h));
+      overflow: hidden;
+    }
+
+    .hero-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 64px 80px 80px;
+    }
+
+    .hero-label {
+      display: block;
+      font-family: var(--ff-b);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeUp 0.7s ease-out 0.1s forwards;
+    }
+
+    .hero-h1 {
+      font-family: var(--ff-h);
+      font-size: clamp(40px, 5vw, 62px);
+      font-weight: 400;
+      line-height: 1.12;
+      color: var(--text);
+      margin-bottom: 20px;
+      text-wrap: balance;
+      opacity: 0;
+      animation: fadeUp 0.7s ease-out 0.25s forwards;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 36px;
+      max-width: 420px;
+      opacity: 0;
+      animation: fadeUp 0.7s ease-out 0.4s forwards;
+    }
+
+    .hero-rating-mobile {
+      display: none;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      opacity: 0;
+      animation: fadeUp 0.7s ease-out 0.55s forwards;
+    }
+
+    .hero-img {
+      flex: 1;
+      height: 100%;
+      position: relative;
+    }
+
+    .hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+    }
+
+    .hero-badge {
+      position: absolute;
+      left: 32px;
+      bottom: 32px;
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      border-radius: 4px;
+      padding: 16px 22px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      opacity: 0;
+      animation: fadeUp 0.7s ease-out 0.7s forwards;
+    }
+
+    .hero-badge-stars {
+      color: var(--accent);
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    .hero-badge-text {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .hero-badge-text span {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* SECTIONS */
+    .section-label {
+      display: block;
+      font-family: var(--ff-b);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .section-h2 {
+      font-family: var(--ff-h);
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 16px;
+      text-wrap: balance;
+    }
+
+    .section-sub {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 580px;
+      text-wrap: pretty;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* FADE */
+    .fade {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+    }
+
+    .fade.on {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .d1 {
+      transition-delay: 0.08s;
+    }
+
+    .d2 {
+      transition-delay: 0.18s;
+    }
+
+    .d3 {
+      transition-delay: 0.28s;
+    }
+
+    .d4 {
+      transition-delay: 0.38s;
+    }
+
+    .d5 {
+      transition-delay: 0.48s;
+    }
+
+    /* O NAS */
+    .about {
+      padding: 96px 0;
+      background: var(--white);
+    }
+
+    .about-inner {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text p {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 16px;
+      text-wrap: pretty;
+    }
+
+    .about-text p:last-of-type {
+      margin-bottom: 36px;
+    }
+
+    .about-stats {
+      display: flex;
+      gap: 48px;
+    }
+
+    .stat-num {
+      font-family: var(--ff-h);
+      font-size: 44px;
+      font-weight: 400;
+      color: var(--accent);
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stat-icon {
+      flex-shrink: 0;
+      position: relative;
+      top: 1px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .about-img {
+      flex: 0 0 480px;
+      aspect-ratio: 4 / 3;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* USLUGI */
+    .uslugi {
+      padding: 96px 0 60px;
+      background: var(--bg);
+    }
+
+    .uslugi-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .uslugi-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 840px;
+      margin: 0 auto 20px;
+    }
+
+    .svc-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+    }
+
+    .svc-card.svc-on {
+      opacity: 1;
+      transform: none;
+    }
+
+    .svc-img {
+      width: 100%;
+      aspect-ratio: 7 / 6;
+      overflow: hidden;
+    }
+
+    .svc-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .svc-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .svc-num {
+      font-family: var(--ff-h);
+      font-size: 18px;
+      color: var(--accent);
+      opacity: 0.55;
+      margin-bottom: 8px;
+    }
+
+    .svc-title {
+      font-family: var(--ff-h);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+
+    .svc-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .svc-price {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .svc-val {
+      font-family: var(--ff-h);
+      font-size: 26px;
+      font-weight: 400;
+      color: var(--accent);
+    }
+
+    .svc-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-left: auto;
+      transition: gap 0.2s;
+    }
+
+    .svc-more:hover {
+      gap: 8px;
+    }
+
+    .uslugi-cta {
+      text-align: center;
+      padding: 48px 0 0;
+    }
+
+    /* CENNIK */
+    .cennik {
+      padding: 60px 0 96px;
+      background: var(--bg);
+    }
+
+    .cennik-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin-bottom: 36px;
+    }
+
+    .tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab-btn {
+      font-family: var(--ff-b);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s;
+      margin-bottom: -1px;
+    }
+
+    .tab-btn.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .price-list {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .price-group-label {
+      font-family: var(--ff-b);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 24px 0 6px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    }
+
+    .price-group-label:first-child {
+      margin-top: 0;
+    }
+
+    .price-group-label.on {
+      opacity: 1;
+      transform: none;
+    }
+
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+      gap: 16px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    }
+
+    .price-item.on {
+      opacity: 1;
+      transform: none;
+    }
+
+    .pi-name {
+      font-size: 15px;
+      color: var(--text);
+      flex: 1;
+    }
+
+    .pi-time {
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .pi-val {
+      font-family: var(--ff-h);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--accent);
+      white-space: nowrap;
+      min-width: 64px;
+      text-align: right;
+    }
+
+    /* OPINIE */
+    .opinie {
+      padding: 96px 0;
+      background: linear-gradient(180deg, var(--white) 0%, #FBF6EC 100%);
+    }
+
+    .opinie-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .opinie-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .opinie-more {
+      display: flex;
+      justify-content: center;
+      margin-top: 36px;
+    }
+
+    .opinie-more a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--accent);
+      transition: gap 0.2s;
+    }
+
+    .opinie-more a:hover {
+      gap: 9px;
+    }
+
+    .opinia {
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      border-radius: 2px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    }
+
+    .opinia-stars {
+      color: var(--accent);
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .opinia-text {
+      font-family: var(--ff-h);
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 24px;
+    }
+
+    .opinia-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .opinia-detail {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    /* KONTAKT */
+    .kontakt {
+      padding: 96px 0;
+      background: var(--bg);
+    }
+
+    .kontakt-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .kontakt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .kontakt-block {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 48px 40px;
+    }
+
+    .kontakt-title {
+      font-family: var(--ff-h);
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .kontakt-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .kontakt-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+      margin-bottom: 24px;
+      font-size: 15px;
+      color: var(--text);
+      font-family: var(--ff-b);
+    }
+
+    .kontakt-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    .k-btn {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--ff-b);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.22s;
+      margin-top: 24px;
+    }
+
+    .k-btn:hover {
+      background: var(--accent-dark);
+    }
+
+    .k-btn-ol {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      background: transparent;
+      color: var(--text);
+      font-family: var(--ff-b);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1.5px solid var(--text);
+      border-radius: 2px;
+      transition: background 0.22s, color 0.22s;
+      margin-top: 12px;
+    }
+
+    .k-btn-ol:hover {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .k-btn-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .k-btn-row .k-btn-ol {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex: 1;
+      margin-top: 0;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #1a1a1a;
+      padding: 40px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      font-family: var(--ff-h);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 6px 14px;
+    }
+
+    .footer-pp {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      transition: color 0.2s;
+    }
+
+    .footer-pp:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* PP MODAL */
+    .pp-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .pp-overlay.active {
+      display: flex;
+    }
+
+    .pp-modal {
+      background: #fff;
+      max-width: 600px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 48px 40px;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .pp-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
+    .pp-title {
+      font-family: var(--ff-h);
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    .pp-body h3 {
+      font-family: var(--ff-b);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+
+    .pp-body p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .pp-modal {
+        padding: 36px 24px;
+      }
+    }
+
+    /* TABLET */
+    @media (max-width: 1024px) {
+      .about-img {
+        flex: 0 0 380px;
+      }
+
+      .about-inner {
+        gap: 48px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .about-inner {
+        flex-direction: column;
+      }
+
+      .about-img {
+        flex: none;
+        width: 100%;
+      }
+
+      .kontakt-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .br-mobile {
+      display: none;
+    }
+
+    #o-nas,
+    #uslugi,
+    #cennik,
+    #opinie,
+    #kontakt {
+      scroll-margin-top: 80px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .br-mobile {
+        display: inline;
+      }
+
+      .container {
+        padding: 0 20px;
+      }
+
+      /* Nav */
+      .nav-inner {
+        padding: 0 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .btn-nav {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      /* Hero mobile - fullscreen z gradientem */
+      .hero {
+        position: relative;
+        height: calc(100svh - var(--nav-h));
+      }
+
+      .hero-img {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+
+      .hero-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+
+      .hero-img::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(18, 15, 10, 0.92) 0%, rgba(18, 15, 10, 0.62) 48%, rgba(18, 15, 10, 0.12) 100%);
+      }
+
+      .hero-badge {
+        display: none;
+      }
+
+      .hero-text {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        justify-content: flex-end;
+        padding: 0 24px 48px;
+      }
+
+      .hero-label {
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 6px;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+      }
+
+      .hero-h1 {
+        font-size: 36px;
+        color: #fff;
+        text-shadow: 0 2px 24px rgba(0, 0, 0, 0.8);
+        margin-bottom: 10px;
+      }
+
+      .hero-sub {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.9);
+        text-shadow: 0 1px 16px rgba(0, 0, 0, 0.95), 0 1px 3px rgba(0, 0, 0, 0.6);
+        margin-bottom: 24px;
+        max-width: none;
+      }
+
+      .hero-rating-mobile {
+        display: inline;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+
+      .hero-btns .btn {
+        text-align: center;
+      }
+
+      .hero-btns .btn-outline {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8px);
+      }
+
+      .hero-btns .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.22);
+      }
+
+      /* About */
+      .about {
+        padding: 64px 0 40px;
+      }
+
+      .about-stats {
+        gap: 28px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Uslugi */
+      .uslugi {
+        padding: 40px 0 40px;
+      }
+
+      .svc-grid {
+        grid-template-columns: 1fr;
+        max-width: none;
+      }
+
+      /* Cennik */
+      .cennik {
+        padding: 20px 0 40px;
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: none;
+        gap: 8px;
+        overflow-x: visible;
+        margin-bottom: 28px;
+      }
+
+      .tab-btn {
+        border: 1px solid var(--border);
+        background: var(--white);
+        text-align: center;
+        white-space: normal;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 0;
+        border-radius: 2px;
+        padding: 12px 8px;
+      }
+
+      .tab-btn.active {
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+      }
+
+      /* Opinie */
+      .opinie {
+        padding: 40px 0 32px;
+      }
+
+      .opinie-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .opinia {
+        padding: 28px;
+      }
+
+      /* Kontakt */
+      .kontakt {
+        padding: 40px 0;
+      }
+
+      .kontakt-grid {
+        gap: 20px;
+      }
+
+      .kontakt-block {
+        padding: 28px 24px;
+      }
+
+      .kontakt-sub {
+        margin-bottom: 20px;
+      }
+
+      .kontakt-row {
+        padding: 10px 0;
+        margin-bottom: 16px;
+      }
+
+      .k-btn {
+        margin-top: 16px;
+      }
+
+      /* Footer */
+      .footer-inner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Beauty Up</a>
+      <div class="nav-links">
+        <a href="#uslugi">Usługi</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#opinie">Opinie</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
+        class="btn-nav">Booksy</a>
+      <div class="nav-socials">
+        <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="nav-soc" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank" class="nav-soc"
+          aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Otwórz menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mmenu" id="mmenu">
+    <a href="#kontakt" class="mmenu-cta">Umów wizytę</a>
+    <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
+      class="mmenu-cta-ol">Rezerwuj przez Booksy</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#cennik">Cennik</a>
+    <a href="#opinie">Opinie</a>
+    <a href="#kontakt">Kontakt</a>
+    <div class="mmenu-socials">
+      <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="mmenu-soc" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank" class="mmenu-soc"
+        aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="hero-label">Salon Kosmetyczny i Fryzjerski · Suwałki</span>
+      <h1 class="hero-h1">Piękno dopracowane w każdym detalu</h1>
+      <p class="hero-sub"><span class="hero-rating-mobile">5.0 ★ średnia ocena Booksy<br></span>263+ zadowolonych klientek i klientów</p>
+      <div class="hero-btns">
+        <a href="#kontakt" class="btn btn-primary">Umów wizytę</a>
+        <a href="#cennik" class="btn btn-outline">Zobacz cennik</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="hero.jpg" alt="Beauty Up - salon kosmetyczny i fryzjerski w Suwałkach">
+      <div class="hero-badge">
+        <span class="hero-badge-stars">★★★★★</span>
+        <span class="hero-badge-text">5.0 / 5<span>263 opinie Booksy</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- O NAS -->
+  <section class="about" id="o-nas">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-text">
+          <span class="section-label fade">O nas</span>
+          <h2 class="section-h2 fade d1">Zespół, który dba o każdy detal</h2>
+          <p class="fade d2">Cieszymy się, że tu trafiłaś/eś! Beauty Up to salon kosmetyczno-fryzjerski w sercu Suwałk, w
+            którym połączyliśmy fryzjerstwo, stylizację brwi i rzęs, paznokcie, makijaż oraz makijaż permanentny pod
+            jednym dachem.</p>
+          <p class="fade d3">Nasz zespół tworzy pięć specjalistek z wieloletnim doświadczeniem i pasją do swojej
+            dziedziny - od barberki, przez stylistki paznokci, po linergistkę i fryzjerkę specjalizującą się w
+            koloryzacji. Każda wizyta to indywidualne podejście i dbałość o najmniejszy szczegół.</p>
+          <div class="about-stats">
+            <div class="fade d3">
+              <div class="stat-num">5<svg class="stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="stat-label">ekspertek w zespole</div>
+            </div>
+            <div class="fade d4">
+              <div class="stat-num">50+</div>
+              <div class="stat-label">zabiegów w ofercie</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-img fade d2">
+          <img src="o-nas.jpg" alt="Wnętrze salonu Beauty Up w Suwałkach">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USLUGI -->
+  <section class="uslugi" id="uslugi">
+    <div class="container">
+      <div class="uslugi-header">
+        <span class="section-label fade">Oferta</span>
+        <h2 class="section-h2 fade d1">Co dla Ciebie mamy</h2>
+        <p class="section-sub fade d2">Cztery kategorie usług, jeden salon.<br>Każda wykonana z dbałością o szczegóły i
+          indywidualnym podejściem do klientki.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <div class="svc-img"><img src="01.jpeg" alt="Fryzjerstwo w Beauty Up"></div>
+          <div class="svc-body">
+            <span class="svc-num">01</span>
+            <h3 class="svc-title">Fryzjerstwo</h3>
+            <p class="svc-desc">Strzyżenia damskie, męskie i dziecięce, barbering, koloryzacja oraz zabiegi
+              pielęgnacyjne na włosy. Fryzura dopasowana do Twojego stylu.</p>
+            <div class="svc-price">
+              <span class="svc-val">od 60 zł</span>
+              <a href="#cennik" class="svc-more" data-tab="fryzjerstwo">Zobacz cennik <svg width="12" height="12"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-img"><img src="02.jpg" alt="Stylizacja paznokci w Beauty Up"></div>
+          <div class="svc-body">
+            <span class="svc-num">02</span>
+            <h3 class="svc-title">Paznokcie</h3>
+            <p class="svc-desc">Manicure klasyczny, stylizacja hybrydowa i żelowa oraz przedłużanie paznokci. Trwały
+              efekt i dbałość o zdrowie naturalnej płytki.</p>
+            <div class="svc-price">
+              <span class="svc-val">od 60 zł</span>
+              <a href="#cennik" class="svc-more" data-tab="paznokcie">Zobacz cennik <svg width="12" height="12"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-img"><img src="03.jpg" alt="Stylizacja brwi i rzęs w Beauty Up"></div>
+          <div class="svc-body">
+            <span class="svc-num">03</span>
+            <h3 class="svc-title">Brwi i rzęsy</h3>
+            <p class="svc-desc">Laminacja i henna brwi, regulacja, laminacja i lifting rzęs. Kształt i kolor dopasowane
+              do rysów Twojej twarzy.</p>
+            <div class="svc-price">
+              <span class="svc-val">od 30 zł</span>
+              <a href="#cennik" class="svc-more" data-tab="brwi">Zobacz cennik <svg width="12" height="12"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="svc-card">
+          <div class="svc-img"><img src="04.jpg" alt="Makijaż i makijaż permanentny w Beauty Up"></div>
+          <div class="svc-body">
+            <span class="svc-num">04</span>
+            <h3 class="svc-title">Makijaż i makijaż permanentny</h3>
+            <p class="svc-desc">Makijaż okolicznościowy i ślubny oraz naturalny makijaż permanentny brwi. Delikatny
+              efekt, który podkreśla Twoje atuty.</p>
+            <div class="svc-price">
+              <span class="svc-val">od 220 zł</span>
+              <a href="#cennik" class="svc-more" data-tab="makijaz">Zobacz cennik <svg width="12" height="12"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uslugi-cta fade">
+        <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
+          class="btn btn-primary">Zarezerwuj przez Booksy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENNIK -->
+  <section class="cennik" id="cennik">
+    <div class="container">
+      <div class="cennik-header">
+        <span class="section-label fade">Cennik</span>
+        <h2 class="section-h2 fade d1">Pełny cennik</h2>
+      </div>
+      <div class="tabs fade d2" id="tabs">
+        <button class="tab-btn active" data-tab="fryzjerstwo">Fryzjerstwo</button>
+        <button class="tab-btn" data-tab="paznokcie">Paznokcie</button>
+        <button class="tab-btn" data-tab="brwi">Brwi i rzęsy</button>
+        <button class="tab-btn" data-tab="makijaz">Makijaż i PMU</button>
+      </div>
+
+      <div class="tab-panel active" id="panel-fryzjerstwo">
+        <div class="price-list">
+          <div class="price-group-label">Strzyżenia</div>
+          <div class="price-item"><span class="pi-name">Strzyżenie damskie</span><span class="pi-time">30
+              min</span><span class="pi-val">70 zł</span></div>
+          <div class="price-item"><span class="pi-name">Strzyżenie damskie + mycie</span><span class="pi-time">30
+              min</span><span class="pi-val">75 zł</span></div>
+          <div class="price-item"><span class="pi-name">Strzyżenie męskie</span><span class="pi-time">30 min</span><span
+              class="pi-val">60 zł</span></div>
+          <div class="price-item"><span class="pi-name">Strzyżenie barberskie</span><span class="pi-time">40
+              min</span><span class="pi-val">70 zł</span></div>
+          <div class="price-item"><span class="pi-name">Strzyżenie brody</span><span class="pi-time">30 min</span><span
+              class="pi-val">60 zł</span></div>
+          <div class="price-item"><span class="pi-name">COMBO - strzyżenie włosów i brody</span><span class="pi-time">1g
+              10min</span><span class="pi-val">120 zł</span></div>
+          <div class="price-item"><span class="pi-name">Strzyżenie dziecięce (do 10 lat)</span><span class="pi-time">30
+              min</span><span class="pi-val">40 zł</span></div>
+          <div class="price-group-label">Koloryzacja i pielęgnacja</div>
+          <div class="price-item"><span class="pi-name">Farbowanie 1 kolor (włosy krótkie)</span><span
+              class="pi-time">2g</span><span class="pi-val">250 zł</span></div>
+          <div class="price-item"><span class="pi-name">Farbowanie 1 kolor (włosy średnie)</span><span
+              class="pi-time">2g</span><span class="pi-val">300 zł</span></div>
+          <div class="price-item"><span class="pi-name">Farbowanie 1 kolor (włosy długie)</span><span class="pi-time">2g
+              30min</span><span class="pi-val">350 zł</span></div>
+          <div class="price-item"><span class="pi-name">Pasemka / balayage</span><span class="pi-time">3g</span><span
+              class="pi-val">od 300 zł</span></div>
+          <div class="price-item"><span class="pi-name">Tonowanie włosów</span><span class="pi-time">1g</span><span
+              class="pi-val">od 150 zł</span></div>
+          <div class="price-item"><span class="pi-name">Laminowanie włosów</span><span class="pi-time">1g
+              15min</span><span class="pi-val">od 100 zł</span></div>
+          <div class="price-item"><span class="pi-name">Botoks na włosy</span><span class="pi-time">1g 30min</span><span
+              class="pi-val">od 200 zł</span></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="panel-paznokcie">
+        <div class="price-list">
+          <div class="price-item"><span class="pi-name">Przedłużanie żelem</span><span class="pi-time">2g</span><span
+              class="pi-val">od 180 zł</span></div>
+          <div class="price-item"><span class="pi-name">Stylizacja hybrydowa</span><span class="pi-time">1g</span><span
+              class="pi-val">od 110 zł</span></div>
+          <div class="price-item"><span class="pi-name">Żel na naturalnej płytce</span><span class="pi-time">1g
+              20min</span><span class="pi-val">od 130 zł</span></div>
+          <div class="price-item"><span class="pi-name">Uzupełnienie do 4 tygodni</span><span class="pi-time">1g
+              20min</span><span class="pi-val">od 140 zł</span></div>
+          <div class="price-item"><span class="pi-name">Uzupełnienie powyżej 4 tygodni</span><span class="pi-time">2g
+              20min</span><span class="pi-val">od 150 zł</span></div>
+          <div class="price-item"><span class="pi-name">Manicure klasyczny (damski i męski)</span><span
+              class="pi-time">40 min</span><span class="pi-val">60 zł</span></div>
+          <div class="price-item"><span class="pi-name">Zdjęcie stylizacji</span><span class="pi-time">30
+              min</span><span class="pi-val">od 50 zł</span></div>
+          <div class="price-item"><span class="pi-name">French konstrukcyjny</span><span class="pi-time">5g</span><span
+              class="pi-val">od 300 zł</span></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="panel-brwi">
+        <div class="price-list">
+          <div class="price-item"><span class="pi-name">Laminacja brwi + koloryzacja + regulacja</span><span
+              class="pi-time">1g</span><span class="pi-val">150 zł</span></div>
+          <div class="price-item"><span class="pi-name">Laminacja brwi + regulacja</span><span class="pi-time">50
+              min</span><span class="pi-val">120 zł</span></div>
+          <div class="price-item"><span class="pi-name">Henna pudrowa + regulacja</span><span class="pi-time">50
+              min</span><span class="pi-val">90 zł</span></div>
+          <div class="price-item"><span class="pi-name">Regulacja brwi</span><span class="pi-time">15 min</span><span
+              class="pi-val">30 zł</span></div>
+          <div class="price-item"><span class="pi-name">Regeneracja brwi botoksem + regulacja</span><span
+              class="pi-time">20 min</span><span class="pi-val">50 zł</span></div>
+          <div class="price-item"><span class="pi-name">Koreańska laminacja rzęs</span><span
+              class="pi-time">1g</span><span class="pi-val">180 zł</span></div>
+          <div class="price-item"><span class="pi-name">Lifting rzęs + koloryzacja</span><span
+              class="pi-time">1g</span><span class="pi-val">150 zł</span></div>
+          <div class="price-item"><span class="pi-name">Pakiet Premium (laminacja brwi + lifting rzęs)</span><span
+              class="pi-time">1g 15min</span><span class="pi-val">260 zł</span></div>
+        </div>
+      </div>
+      <div class="tab-panel" id="panel-makijaz">
+        <div class="price-list">
+          <div class="price-item"><span class="pi-name">Makijaż okolicznościowy</span><span class="pi-time">1g
+              15min</span><span class="pi-val">220 zł</span></div>
+          <div class="price-item"><span class="pi-name">Lekcja makijażu</span><span class="pi-time">4g</span><span
+              class="pi-val">400 zł</span></div>
+          <div class="price-item"><span class="pi-name">Makijaż permanentny brwi</span><span class="pi-time">2g
+              15min</span><span class="pi-val">800 zł</span></div>
+          <div class="price-item"><span class="pi-name">Korekta makijażu permanentnego (do 2 mies.)</span><span
+              class="pi-time">1g</span><span class="pi-val">100 zł</span></div>
+          <div class="price-item"><span class="pi-name">Konsultacja makijażu permanentnego (brwi)</span><span class="pi-time">15
+              min</span><span class="pi-val">bezpłatnie</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIE -->
+  <section class="opinie" id="opinie">
+    <div class="container">
+      <div class="opinie-header">
+        <span class="section-label fade">Opinie</span>
+        <h2 class="section-h2 fade d1">Zaufało nam już 263 klientek</h2>
+      </div>
+      <div class="opinie-grid">
+        <div class="opinia fade d1">
+          <div class="opinia-stars">★★★★★</div>
+          <p class="opinia-text">"Jestem bardzo zadowolona z efektu! Brwi mają idealny kształt, są naturalne i
+            dopasowane do twarzy. Zabieg wykonany profesjonalnie i w miłej atmosferze."</p>
+          <div>
+            <div class="opinia-name">Karolina</div>
+            <div class="opinia-detail">Farbka brwi u Anity · Booksy</div>
+          </div>
+        </div>
+        <div class="opinia fade d2">
+          <div class="opinia-stars">★★★★★</div>
+          <p class="opinia-text">"Bardzo polecam wizytę. Profesjonalne podejście do klienta, miła obsługa i świetna
+            jakość wykonania. Pani Ewelina doradziła mi idealną fryzurę i jestem zachwycony efektem. Na pewno jeszcze
+            nie raz wrócę!"</p>
+          <div>
+            <div class="opinia-name">Wojciech</div>
+            <div class="opinia-detail">Strzyżenie włosów i brody u Eweliny · Booksy</div>
+          </div>
+        </div>
+        <div class="opinia fade d3">
+          <div class="opinia-stars">★★★★★</div>
+          <p class="opinia-text">"Paznokcie wykonane starannie i w przemiłej atmosferze. Nie mam zastrzeżeń, każda
+            stylizacja dokładnie omówiona i dopracowana. Przede wszystkim schludnie wykonana i trwała, polecam
+            serdecznie."</p>
+          <div>
+            <div class="opinia-name">Ewelina</div>
+            <div class="opinia-detail">Żel na naturalnej płytce u Anety · Booksy</div>
+          </div>
+        </div>
+      </div>
+      <div class="opinie-more fade d4">
+        <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki?do=invite&utm_medium=merchant_customer_invite#reviews-section" target="_blank" rel="noopener">Zobacz wszystkie opinie na Booksy
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="kontakt" id="kontakt">
+    <div class="container">
+      <div class="kontakt-header">
+        <span class="section-label fade">Kontakt</span>
+        <h2 class="section-h2 fade d1">Znajdź nas</h2>
+      </div>
+      <div class="kontakt-grid">
+        <div class="kontakt-block fade d1">
+          <h3 class="kontakt-title">Umów wizytę</h3>
+          <p class="kontakt-sub">Rezerwacja online przez Booksy lub kontakt telefoniczny.</p>
+          <div class="kontakt-row">
+            <span class="kontakt-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.41 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </span>
+            <a href="tel:508024343">508 024 343</a>
+          </div>
+          <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
+            class="k-btn">Zarezerwuj przez Booksy</a>
+          <a href="tel:508024343" class="k-btn-ol">Zadzwoń: 508 024 343</a>
+        </div>
+        <div class="kontakt-block fade d2">
+          <h3 class="kontakt-title">Odwiedź nas</h3>
+          <p class="kontakt-sub">Salon znajdziesz w centrum Suwałk.</p>
+          <div class="kontakt-row">
+            <span class="kontakt-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            <a href="https://share.google/OuTMThSdAcSJXDFJ5" target="_blank">ul. Piłsudskiego 11 lok. 2, Suwałki</a>
+          </div>
+          <a href="https://share.google/OuTMThSdAcSJXDFJ5" target="_blank" class="k-btn">Zobacz na mapie</a>
+          <div class="k-btn-row">
+            <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="k-btn-ol">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank"
+              class="k-btn-ol">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Beauty Up</span>
+        <a href="#" class="footer-pp" id="pp-link">Polityka prywatności</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="pp-overlay" id="pp-overlay">
+    <div class="pp-modal">
+      <button class="pp-close" id="pp-close">&#x2715;</button>
+      <h2 class="pp-title">Polityka prywatności</h2>
+      <div class="pp-body">
+        <p><strong>Administrator danych:</strong> Beauty Up, ul. Piłsudskiego 11 lok. 2, Suwałki, tel. 508 024 343</p>
+        <h3>Cel przetwarzania danych</h3>
+        <p>Dane kontaktowe podane podczas kontaktu telefonicznego, przez media społecznościowe lub Booksy przetwarzane
+          są wyłącznie w celu realizacji usług lub umówienia wizyty (art. 6 ust. 1 lit. b RODO). Dane nie są
+          przekazywane osobom trzecim ani wykorzystywane w celach marketingowych bez Twojej zgody.</p>
+        <h3>Google Fonts</h3>
+        <p>Strona korzysta z czcionek Google Fonts. Przy ładowaniu strony przeglądarka nawiązuje połączenie z serwerami
+          Google, przekazując adres IP użytkownika. Google LLC jest odrębnym administratorem tych danych.</p>
+        <h3>Prawa użytkownika</h3>
+        <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia lub ograniczenia przetwarzania. W sprawie
+          danych osobowych skontaktuj się pod numer 508 024 343.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mmenu = document.getElementById('mmenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mmenu.classList.toggle('open');
+    });
+    mmenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mmenu.classList.remove('open');
+      });
+    });
+
+    // Svc more links
+    document.querySelectorAll('.svc-more').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tabName = link.dataset.tab;
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        const btn = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
+        const panel = document.getElementById('panel-' + tabName);
+        btn.classList.add('active');
+        panel.classList.add('active');
+        animatePriceItems(panel, 0);
+        document.getElementById('cennik').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Cennik tabs
+    function animatePriceItems(panel, baseDelay) {
+      panel.querySelectorAll('.price-item, .price-group-label').forEach((el, i) => {
+        el.classList.remove('on');
+        el.style.transitionDelay = (baseDelay + i * 0.05) + 's';
+        requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('on')));
+      });
+    }
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        const panel = document.getElementById('panel-' + btn.dataset.tab);
+        panel.classList.add('active');
+        animatePriceItems(panel, 0);
+      });
+    });
+
+    // IntersectionObserver - fade elements
+    const fadeObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('on');
+          fadeObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade').forEach(el => fadeObs.observe(el));
+
+    // IntersectionObserver - service cards (osobny stagger)
+    document.querySelectorAll('.svc-card').forEach((el, i) => {
+      el.style.transitionDelay = (i * 0.12) + 's';
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('svc-on');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      obs.observe(el);
+    });
+
+    // Cennik - animacja przy wejściu w viewport
+    const cennikObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const active = document.querySelector('.tab-panel.active');
+          animatePriceItems(active, 0.5);
+          cennikObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cennikObs.observe(document.querySelector('.cennik'));
+
+    // Polityka prywatnosci modal
+    document.getElementById('pp-link').addEventListener('click', e => {
+      e.preventDefault();
+      document.getElementById('pp-overlay').classList.add('active');
+    });
+    document.getElementById('pp-close').addEventListener('click', () => {
+      document.getElementById('pp-overlay').classList.remove('active');
+    });
+    document.getElementById('pp-overlay').addEventListener('click', e => {
+      if (e.target === e.currentTarget) e.currentTarget.classList.remove('active');
+    });
+  </script>
+</body>
+
+</html>
