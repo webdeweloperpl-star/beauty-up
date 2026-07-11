@@ -913,6 +913,120 @@
       margin-top: 3px;
     }
 
+    /* SZKOLENIA */
+    .szkolenia {
+      padding: 96px 0;
+      background: linear-gradient(180deg, var(--white) 0%, #FBF6EC 100%);
+    }
+
+    .szkolenia-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .szkolenia-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .szkolenia-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .szkolenie-card {
+      position: relative;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.75) 0%, rgba(184, 147, 79, 0.08) 100%);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid rgba(184, 147, 79, 0.35);
+      border-radius: 2px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 32px rgba(184, 147, 79, 0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      overflow: hidden;
+    }
+
+    .szkolenie-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    }
+
+    .szkolenie-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(184, 147, 79, 0.6);
+      box-shadow: 0 16px 40px rgba(184, 147, 79, 0.18);
+    }
+
+    .szkolenie-num {
+      font-family: var(--ff-h);
+      font-size: 36px;
+      color: var(--accent);
+      opacity: 0.55;
+      margin-bottom: 6px;
+      line-height: 1;
+    }
+
+    .szkolenie-title {
+      font-family: var(--ff-h);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+
+    .szkolenie-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .szkolenie-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(184, 147, 79, 0.25);
+      margin-bottom: 18px;
+    }
+
+    .szkolenie-badge {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: var(--accent-dark);
+      background: rgba(184, 147, 79, 0.1);
+      border: 1px solid rgba(184, 147, 79, 0.4);
+      border-radius: 20px;
+      padding: 5px 14px;
+    }
+
+    .szkolenie-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      transition: gap 0.2s;
+    }
+
+    .szkolenie-cta:hover {
+      gap: 9px;
+    }
+
     /* KONTAKT */
     .kontakt {
       padding: 96px 0;
@@ -1167,6 +1281,7 @@
     #o-nas,
     #uslugi,
     #cennik,
+    #szkolenia,
     #opinie,
     #kontakt {
       scroll-margin-top: 80px;
@@ -1338,6 +1453,20 @@
         border-color: var(--accent);
       }
 
+      /* Szkolenia */
+      .szkolenia {
+        padding: 40px 0;
+      }
+
+      .szkolenia-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .szkolenie-card {
+        padding: 28px;
+      }
+
       /* Opinie */
       .opinie {
         padding: 40px 0 32px;
@@ -1396,6 +1525,7 @@
       <div class="nav-links">
         <a href="#uslugi">Usługi</a>
         <a href="#cennik">Cennik</a>
+        <a href="#szkolenia">Szkolenia</a>
         <a href="#opinie">Opinie</a>
         <a href="#kontakt">Kontakt</a>
       </div>
@@ -1429,6 +1559,7 @@
       class="mmenu-cta-ol">Rezerwuj przez Booksy</a>
     <a href="#uslugi">Usługi</a>
     <a href="#cennik">Cennik</a>
+    <a href="#szkolenia">Szkolenia</a>
     <a href="#opinie">Opinie</a>
     <a href="#kontakt">Kontakt</a>
     <div class="mmenu-socials">
@@ -1700,6 +1831,76 @@
           <div class="price-item"><span class="pi-name">Konsultacja makijażu permanentnego (brwi)</span><span
               class="pi-time">15
               min</span><span class="pi-val">bezpłatnie</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SZKOLENIA -->
+  <section class="szkolenia" id="szkolenia">
+    <div class="container">
+      <div class="szkolenia-header">
+        <span class="section-label fade">Szkolenia</span>
+        <h2 class="section-h2 fade d1">Rozwijaj się z Beauty Up</h2>
+        <p class="section-sub fade d2">Trzy jednodniowe szkolenia indywidualne ze stylizacji brwi.<br>Zapisy
+          przyjmujemy przez Instagram.</p>
+      </div>
+      <div class="szkolenia-grid">
+        <div class="szkolenie-card fade d1">
+          <span class="szkolenie-num">01</span>
+          <h3 class="szkolenie-title">Henna pudrowa z geometrią brwi</h3>
+          <p class="szkolenie-desc">Naturalna stylizacja i koloryzacja brwi. Nauczysz się architektury brwi, doboru
+            koloru, pracy z henną pudrową oraz uzyskiwania trwałego i estetycznego efektu.</p>
+          <div class="szkolenie-badges">
+            <span class="szkolenie-badge">Jednodniowe</span>
+            <span class="szkolenie-badge">Jednoosobowe</span>
+          </div>
+          <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="szkolenie-cta">Zapisz się przez
+            Instagram
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+        <div class="szkolenie-card fade d2">
+          <span class="szkolenie-num">02</span>
+          <h3 class="szkolenie-title">Laminacja brwi i koloryzacja</h3>
+          <p class="szkolenie-desc">Nowoczesna stylizacja brwi nadająca im idealny kształt i objętość. Poznasz
+            technikę laminacji i farbowania, dobór produktów oraz zasady bezpiecznej pracy, aby uzyskać naturalny i
+            długotrwały efekt.</p>
+          <div class="szkolenie-badges">
+            <span class="szkolenie-badge">Jednodniowe</span>
+            <span class="szkolenie-badge">Jednoosobowe</span>
+          </div>
+          <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="szkolenie-cta">Zapisz się przez
+            Instagram
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+        <div class="szkolenie-card fade d3">
+          <span class="szkolenie-num">03</span>
+          <h3 class="szkolenie-title">Brow Master</h3>
+          <p class="szkolenie-desc">Kompleksowe szkolenie ze stylizacji brwi obejmujące architekturę, hennę pudrową i
+            laminację z koloryzacją. Nauczysz się prawidłowego doboru produktów oraz wykonywania zabiegów, które
+            zapewniają naturalny i długotrwały efekt.</p>
+          <div class="szkolenie-badges">
+            <span class="szkolenie-badge">Jednodniowe</span>
+            <span class="szkolenie-badge">Jednoosobowe</span>
+          </div>
+          <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="szkolenie-cta">Zapisz się przez
+            Instagram
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
