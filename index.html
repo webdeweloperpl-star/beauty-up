@@ -1049,6 +1049,126 @@
       gap: 9px;
     }
 
+    .szkolenia-proof {
+      margin-top: 64px;
+    }
+
+    .szkolenia-proof-label {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      margin-bottom: 24px;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .proof-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 2px;
+      border: 1px solid rgba(184, 147, 79, 0.35);
+      box-shadow: 0 8px 24px rgba(184, 147, 79, 0.1);
+      aspect-ratio: 4 / 5;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .proof-item:hover {
+      transform: translateY(-4px);
+      border-color: rgba(184, 147, 79, 0.6);
+      box-shadow: 0 16px 36px rgba(184, 147, 79, 0.18);
+    }
+
+    .proof-item img,
+    .proof-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .proof-large {
+      grid-column: span 2;
+      aspect-ratio: 8 / 5;
+    }
+
+    .proof-wide {
+      grid-column: span 2;
+      aspect-ratio: 10 / 7;
+    }
+
+    .proof-full img {
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+
+    .proof-top video {
+      object-position: 50% 32%;
+    }
+
+    .proof-video video {
+      cursor: pointer;
+    }
+
+    .proof-play {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .proof-play:hover {
+      background: rgba(10, 10, 10, 0.75);
+    }
+
+    .proof-video.is-playing .proof-play {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .proof-fs {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(10, 10, 10, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      opacity: 0;
+      transition: background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .proof-video:hover .proof-fs,
+    .proof-video.is-playing .proof-fs {
+      opacity: 1;
+    }
+
+    .proof-fs:hover {
+      background: rgba(10, 10, 10, 0.75);
+    }
+
     /* KONTAKT */
     .kontakt {
       padding: 96px 0;
@@ -1489,6 +1609,21 @@
         padding: 28px;
       }
 
+      .szkolenia-proof {
+        margin-top: 40px;
+      }
+
+      .proof-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .proof-full img {
+        object-fit: contain;
+        object-position: 50% 50%;
+        background: #FBF6EC;
+      }
+
       /* Opinie */
       .opinie {
         padding: 40px 0 32px;
@@ -1673,7 +1808,7 @@
       </div>
       <div class="svc-grid">
         <div class="svc-card">
-          <div class="svc-img"><img src="01.jpeg" alt="Fryzjerstwo w Beauty Up"></div>
+          <div class="svc-img"><img src="01.jpg" alt="Fryzjerstwo w Beauty Up"></div>
           <div class="svc-body">
             <span class="svc-num">01</span>
             <h3 class="svc-title">Fryzjerstwo</h3>
@@ -1925,6 +2060,68 @@
           </a>
         </div>
       </div>
+      <div class="szkolenia-proof">
+        <p class="szkolenia-proof-label fade">Zobacz jak to wygląda</p>
+        <div class="proof-grid">
+          <div class="proof-item proof-large fade d1">
+            <img src="szkoleniezdj2.jpg" alt="Absolwentka szkolenia Beauty Up Academy z certyfikatem ukończenia" loading="lazy">
+          </div>
+          <div class="proof-item proof-full fade d2">
+            <img src="szkoleniezdj1.jpg" alt="Materiały szkoleniowe Beauty Up Academy" loading="lazy">
+          </div>
+          <div class="proof-item proof-video fade d3">
+            <video src="szkolenievid1.mp4" muted playsinline preload="metadata"></video>
+            <button class="proof-play" type="button" aria-label="Odtwórz wideo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+            <button class="proof-fs" type="button" aria-label="Pełny ekran">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+              </svg>
+            </button>
+          </div>
+          <div class="proof-item proof-wide proof-video proof-top fade d4">
+            <video src="szkolenievid2.mp4" muted playsinline preload="metadata"></video>
+            <button class="proof-play" type="button" aria-label="Odtwórz wideo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+            <button class="proof-fs" type="button" aria-label="Pełny ekran">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+              </svg>
+            </button>
+          </div>
+          <div class="proof-item proof-wide proof-video fade d5">
+            <video src="szkolenievid3.mp4" muted playsinline preload="metadata"></video>
+            <button class="proof-play" type="button" aria-label="Odtwórz wideo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+            <button class="proof-fs" type="button" aria-label="Pełny ekran">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+                <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+                <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+                <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2015,7 +2212,8 @@
                 <circle cx="12" cy="10" r="3" />
               </svg>
             </span>
-            <a href="https://share.google/OuTMThSdAcSJXDFJ5" target="_blank">ul. Aleksandry Piłsudskiej 11 lok. 2, Suwałki</a>
+            <a href="https://share.google/OuTMThSdAcSJXDFJ5" target="_blank">ul. Aleksandry Piłsudskiej 11 lok. 2,
+              Suwałki</a>
           </div>
           <a href="https://share.google/OuTMThSdAcSJXDFJ5" target="_blank" class="k-btn">Zobacz na mapie</a>
           <div class="k-btn-row">
@@ -2178,6 +2376,22 @@
     });
     document.getElementById('pp-overlay').addEventListener('click', e => {
       if (e.target === e.currentTarget) e.currentTarget.classList.remove('active');
+    });
+
+    // Szkolenia - proof video (play + fullscreen)
+    document.querySelectorAll('.proof-video').forEach(wrap => {
+      const video = wrap.querySelector('video');
+      const togglePlay = () => video.paused ? video.play() : video.pause();
+      wrap.querySelector('.proof-play').addEventListener('click', togglePlay);
+      video.addEventListener('click', togglePlay);
+      video.addEventListener('play', () => wrap.classList.add('is-playing'));
+      video.addEventListener('pause', () => wrap.classList.remove('is-playing'));
+      video.addEventListener('ended', () => wrap.classList.remove('is-playing'));
+      wrap.querySelector('.proof-fs').addEventListener('click', e => {
+        e.stopPropagation();
+        if (video.requestFullscreen) video.requestFullscreen();
+        else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
+      });
     });
   </script>
 </body>
