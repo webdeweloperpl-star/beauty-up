@@ -1921,7 +1921,7 @@
       </div>
 
       <form class="cform fade d2" id="cform" novalidate>
-        <input type="hidden" name="access_key" value="WEB3FORMS_KEY">
+        <input type="hidden" name="access_key" value="cabf58a5-b4ba-4fd6-a577-62574c9bf27e">
         <input type="hidden" name="subject" value="Nowa wiadomość ze strony Beauty Up">
         <input type="hidden" name="from_name" value="Strona Beauty Up">
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
@@ -2125,11 +2125,6 @@
 
       const data = Object.fromEntries(new FormData(form));
       if (data.phone) data.phone = '+48 ' + data.phone.trim();
-      if (data.access_key === 'WEB3FORMS_KEY') {
-        out.classList.add('err');
-        out.textContent = 'Formularz będzie aktywny wkrótce. Zadzwoń: 508 02 43 43.';
-        return;
-      }
 
       submitBtn.disabled = true;
       submitBtn.textContent = 'Wysyłanie...';
