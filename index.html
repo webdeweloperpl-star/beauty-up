@@ -4,33 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauty Up - Salon Kosmetyczny i Fryzjerski · Suwałki</title>
+  <title>Beauty Up · Salon Kosmetyczny i Fryzjerski · Suwałki</title>
   <meta name="description"
-    content="Beauty Up - salon kosmetyczno-fryzjerski w Suwałkach. Fryzjerstwo, paznokcie, brwi i rzęsy, makijaż i makijaż permanentny. 5.0 na Booksy, 263+ opinii.">
+    content="Beauty Up, salon kosmetyczno-fryzjerski w Suwałkach. Makijaż permanentny brwi, stylizacja brwi, makijaż ślubny, fryzjerstwo, barber i paznokcie. Szkolenia ze stylizacji brwi. 5.0 na Booksy.">
   <link rel="canonical" href="https://beautyupsuwalki.pl/">
-  <meta name="theme-color" content="#B8934F">
+  <meta name="theme-color" content="#FFFFFF">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
   <link rel="apple-touch-icon" href="favicon-180.png">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Beauty Up">
-  <meta property="og:title" content="Beauty Up - Salon Kosmetyczny i Fryzjerski · Suwałki">
+  <meta property="og:title" content="Beauty Up · Salon Kosmetyczny i Fryzjerski · Suwałki">
   <meta property="og:description"
-    content="Salon kosmetyczno-fryzjerski w Suwałkach. Fryzjerstwo, paznokcie, brwi i rzęsy, makijaż i makijaż permanentny. 5.0 na Booksy, 263+ opinii.">
-  <meta property="og:image" content="https://beautyupsuwalki.pl/favikon.jpg">
+    content="Indywidualne podejście, doświadczenie, naturalne efekty. Salon kosmetyczno-fryzjerski w Suwałkach.">
+  <meta property="og:image" content="https://beautyupsuwalki.pl/hero.jpg">
   <meta property="og:url" content="https://beautyupsuwalki.pl/">
   <meta property="og:locale" content="pl_PL">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Beauty Up - Salon Kosmetyczny i Fryzjerski · Suwałki">
+  <meta name="twitter:title" content="Beauty Up · Salon Kosmetyczny i Fryzjerski · Suwałki">
   <meta name="twitter:description"
-    content="Salon kosmetyczno-fryzjerski w Suwałkach. Fryzjerstwo, paznokcie, brwi i rzęsy, makijaż i makijaż permanentny. 5.0 na Booksy, 263+ opinii.">
-  <meta name="twitter:image" content="https://beautyupsuwalki.pl/favikon.jpg">
+    content="Indywidualne podejście, doświadczenie, naturalne efekty. Salon kosmetyczno-fryzjerski w Suwałkach.">
+  <meta name="twitter:image" content="https://beautyupsuwalki.pl/hero.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="hero.jpg">
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,7 +42,7 @@
   "telephone": "+48508024343",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "ul. Aleksandry Piłsudskiej 11 lok. 2",
+    "streetAddress": "ul. Aleksandry Piłsudskiej 11 lok. U2",
     "addressLocality": "Suwałki",
     "postalCode": "16-400",
     "addressCountry": "PL"
@@ -49,17 +50,17 @@
   "sameAs": [
     "https://www.instagram.com/beautyupsuwalki/",
     "https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL",
-    "https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo"
+    "https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki"
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "263"
+    "reviewCount": "364"
   }
 }
 </script>
+
   <style>
-    /* ROOT */
     *,
     *::before,
     *::after {
@@ -69,37 +70,40 @@
     }
 
     :root {
-      --bg: #FAFAFA;
-      --white: #ffffff;
-      --text: #1a1a1a;
-      --muted: #5a5a5a;
-      --accent: #B8934F;
-      --accent-dark: #93733D;
-      --border: rgba(184, 147, 79, 0.18);
-      --glass-bg: rgba(255, 255, 255, 0.62);
-      --glass-border: rgba(255, 255, 255, 0.55);
-      --glass-blur: blur(16px) saturate(160%);
+      --bg: #FFFFFF;
+      --bg-alt: #F7F4F0;
+      --text: #1A1A1A;
+      --muted: #5C5C5C;
+      --accent: #76634F;
+      --line: rgba(26, 26, 26, 0.12);
+      --line-strong: rgba(26, 26, 26, 0.55);
       --nav-h: 72px;
-      --ff-h: 'Cormorant Garamond', serif;
-      --ff-b: 'Raleway', sans-serif;
+      --ff: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+      --side: 48px;
     }
 
     html {
       scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
     }
 
     body {
-      font-family: var(--ff-b);
-      background: var(--bg);
-      color: var(--text);
-      font-size: 15px;
+      font-family: var(--ff);
       font-weight: 400;
-      line-height: 1.6;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.lock {
+      overflow: hidden;
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     img {
@@ -107,1567 +111,1320 @@
       max-width: 100%;
     }
 
-    /* BUTTONS */
-    .btn {
-      display: inline-block;
-      font-family: var(--ff-b);
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 16px 36px;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: background 0.22s, color 0.22s, border-color 0.22s;
-      border: 1.5px solid transparent;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
-    }
-
-    .btn-primary:hover {
-      background: var(--accent-dark);
-      border-color: var(--accent-dark);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--text);
-      border-color: var(--text);
-    }
-
-    .btn-outline:hover {
-      background: var(--text);
-      color: #fff;
-    }
-
-    /* NAV - GLASS */
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(255, 255, 255, 0.72);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border-bottom: 1px solid var(--border);
-      height: var(--nav-h);
-    }
-
-    .nav-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 48px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-    }
-
-    .nav-logo {
-      font-family: var(--ff-h);
-      font-size: 15px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      padding: 7px 16px;
-      white-space: nowrap;
-      margin-right: auto;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-    }
-
-    .nav-links a {
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    .btn-nav {
-      font-family: var(--ff-b);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 11px 24px;
-      background: var(--accent);
-      color: #fff;
-      border-radius: 2px;
-      white-space: nowrap;
-      transition: background 0.22s;
-    }
-
-    .btn-nav:hover {
-      background: var(--accent-dark);
-    }
-
-    .nav-socials {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .nav-soc {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      transition: color 0.2s;
-    }
-
-    .nav-soc:hover {
-      color: var(--accent);
-    }
-
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 4px;
-    }
-
-    .hamburger span {
-      display: block;
-      width: 24px;
-      height: 1.5px;
-      background: var(--text);
-      transition: transform 0.3s, opacity 0.3s;
-    }
-
-    .hamburger.open span:nth-child(1) {
-      transform: translateY(6.5px) rotate(45deg);
-    }
-
-    .hamburger.open span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.open span:nth-child(3) {
-      transform: translateY(-6.5px) rotate(-45deg);
-    }
-
-    .mmenu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      padding: 32px 24px 40px;
-      border-top: 1px solid var(--border);
-      position: fixed;
-      top: var(--nav-h);
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow-y: auto;
-      z-index: 99;
-    }
-
-    .mmenu.open {
-      display: flex;
-    }
-
-    .mmenu-cta {
-      font-family: var(--ff-b);
-      font-size: 16px;
-      font-weight: 600;
-      padding: 22px 0;
-      width: 85%;
-      text-align: center;
-      background: var(--accent);
-      color: #fff;
-      border-radius: 2px;
-      margin-bottom: 12px;
-      letter-spacing: 0.04em;
-    }
-
-    .mmenu-cta-ol {
-      font-family: var(--ff-b);
-      font-size: 16px;
-      font-weight: 600;
-      padding: 22px 0;
-      width: 85%;
-      text-align: center;
-      background: transparent;
-      color: var(--text);
-      border: 1.5px solid var(--text);
-      border-radius: 2px;
-      margin-bottom: 28px;
-      letter-spacing: 0.04em;
-    }
-
-    .mmenu a:not(.mmenu-cta):not(.mmenu-cta-ol):not(.mmenu-soc) {
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      padding: 18px 0;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .mmenu-socials {
-      display: flex;
-      gap: 16px;
-      margin-top: auto;
-      padding-top: 32px;
-    }
-
-    .mmenu-soc {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      transition: color 0.2s, border-color 0.2s;
-    }
-
-    .mmenu-soc:hover {
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-
-    /* HERO */
-    .hero {
-      display: flex;
-      height: calc(100svh - var(--nav-h));
-      overflow: hidden;
-    }
-
-    .hero-text {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 64px 80px 80px;
-    }
-
-    .hero-label {
-      display: block;
-      font-family: var(--ff-b);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 20px;
-      opacity: 0;
-      animation: fadeUp 0.7s ease-out 0.1s forwards;
-    }
-
-    .hero-h1 {
-      font-family: var(--ff-h);
-      font-size: clamp(40px, 5vw, 62px);
-      font-weight: 400;
-      line-height: 1.12;
-      color: var(--text);
-      margin-bottom: 20px;
-      text-wrap: balance;
-      opacity: 0;
-      animation: fadeUp 0.7s ease-out 0.25s forwards;
-    }
-
-    .hero-sub {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 36px;
-      max-width: 420px;
-      opacity: 0;
-      animation: fadeUp 0.7s ease-out 0.4s forwards;
-    }
-
-    .hero-rating-mobile {
-      display: none;
-    }
-
-    .hero-btns {
-      display: flex;
-      gap: 16px;
-      opacity: 0;
-      animation: fadeUp 0.7s ease-out 0.55s forwards;
-    }
-
-    .hero-img {
-      flex: 1;
-      height: 100%;
-      position: relative;
-    }
-
-    .hero-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 25%;
-    }
-
-    .hero-badge {
-      position: absolute;
-      left: 32px;
-      bottom: 32px;
-      background: var(--glass-bg);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border: 1px solid var(--glass-border);
-      border-radius: 4px;
-      padding: 16px 22px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      opacity: 0;
-      animation: fadeUp 0.7s ease-out 0.7s forwards;
-    }
-
-    .hero-badge-stars {
-      color: var(--accent);
-      font-size: 15px;
-      letter-spacing: 1px;
-    }
-
-    .hero-badge-text {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-      white-space: nowrap;
-    }
-
-    .hero-badge-text span {
-      display: block;
-      font-size: 11px;
-      font-weight: 400;
-      color: var(--muted);
-      margin-top: 2px;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(18px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* SECTIONS */
-    .section-label {
-      display: block;
-      font-family: var(--ff-b);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 14px;
-    }
-
-    .section-h2 {
-      font-family: var(--ff-h);
-      font-size: clamp(32px, 4vw, 52px);
-      font-weight: 400;
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 16px;
-      text-wrap: balance;
-    }
-
-    .section-sub {
-      font-size: 15px;
-      color: var(--muted);
-      line-height: 1.7;
-      max-width: 580px;
-      text-wrap: pretty;
+    section[id] {
+      scroll-margin-top: var(--nav-h);
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 0 48px;
+      padding: 0 var(--side);
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section.alt {
+      background: var(--bg-alt);
+    }
+
+    .label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    .h2 {
+      font-weight: 300;
+      font-size: clamp(32px, 4.4vw, 54px);
+      line-height: 1.12;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 640px;
+      text-wrap: pretty;
+    }
+
+    .btn {
+      display: inline-block;
+      font-family: var(--ff);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border: 1px solid var(--text);
+      color: var(--text);
+      background: transparent;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .btn:hover {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .btn-dark {
+      background: var(--text);
+      color: #fff;
+    }
+
+    .btn-dark:hover {
+      background: #000;
     }
 
     /* FADE */
     .fade {
       opacity: 0;
       transform: translateY(18px);
-      transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
 
     .fade.on {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
 
-    .d1 {
-      transition-delay: 0.08s;
+    .d1 { transition-delay: 0.1s; }
+    .d2 { transition-delay: 0.2s; }
+    .d3 { transition-delay: 0.3s; }
+    .d4 { transition-delay: 0.4s; }
+    .d5 { transition-delay: 0.5s; }
+
+    /* NAV */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-h);
+      z-index: 100;
+      color: #fff;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0));
+      transition: background 0.35s, color 0.35s, box-shadow 0.35s;
     }
 
-    .d2 {
-      transition-delay: 0.18s;
+    .nav.scrolled {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 var(--line);
     }
 
-    .d3 {
-      transition-delay: 0.28s;
+    /* menu mobilne otwarte: nav nad .mmenu, ciemny X */
+    .nav.menu-open {
+      z-index: 130;
+      color: var(--text);
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
     }
 
-    .d4 {
-      transition-delay: 0.38s;
+    .nav-inner {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 var(--side);
     }
 
-    .d5 {
-      transition-delay: 0.48s;
+    .nav-brand {
+      position: absolute;
+      left: var(--side);
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s;
+    }
+
+    .nav.scrolled .nav-brand,
+    .nav.menu-open .nav-brand {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 34px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 8px 0;
+      position: relative;
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+    }
+
+    .nav.scrolled .nav-links a {
+      text-shadow: none;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 2px;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .hamburger {
+      display: none;
+      position: absolute;
+      right: 14px;
+      width: 48px;
+      height: 48px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: inherit;
+      z-index: 120;
+    }
+
+    .hamburger span {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      height: 1.5px;
+      background: currentColor;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .hamburger span:nth-child(1) { top: 17px; }
+    .hamburger span:nth-child(2) { top: 23px; }
+    .hamburger span:nth-child(3) { top: 29px; }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* MOBILE MENU (sibling nav, nie dziecko) */
+    .mmenu {
+      position: fixed;
+      inset: 0;
+      z-index: 110;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .mmenu.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mmenu a {
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 12px 0;
+      color: var(--text);
+    }
+
+    .mmenu .cta {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      padding: 20px 0;
+      width: 80%;
+      max-width: 320px;
+      text-align: center;
+      background: var(--text);
+      color: #fff;
+      margin-bottom: 22px;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 100svh;
+      min-height: 560px;
+      overflow: hidden;
+      color: #fff;
+      background: #2a211c;
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    .hero-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 55% at 82% 78%, rgba(20, 14, 10, 0.5) 0%, rgba(20, 14, 10, 0.18) 60%, rgba(20, 14, 10, 0) 100%),
+        linear-gradient(to top, rgba(20, 14, 10, 0.35) 0%, rgba(20, 14, 10, 0) 45%);
+    }
+
+    .hero-text {
+      position: absolute;
+      z-index: 1;
+      right: 7vw;
+      bottom: 11vh;
+      text-align: right;
+    }
+
+    .hero-h1 {
+      font-weight: 300;
+      font-size: clamp(56px, 9.5vw, 150px);
+      line-height: 1;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-right: -0.06em;
+      text-shadow: 0 2px 30px rgba(0, 0, 0, 0.45);
+      animation: rise 1.1s cubic-bezier(.2, .7, .2, 1) 0.2s both;
+    }
+
+    .hero-tags {
+      list-style: none;
+      margin-top: 34px;
+    }
+
+    .hero-tags li {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      line-height: 1.5;
+      padding: 6px 0;
+      text-shadow: 0 1px 14px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.5);
+      animation: rise 0.9s ease-out both;
+    }
+
+    .hero-tags li:nth-child(1) { animation-delay: 0.7s; }
+    .hero-tags li:nth-child(2) { animation-delay: 0.85s; }
+    .hero-tags li:nth-child(3) { animation-delay: 1s; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: none; }
     }
 
     /* O NAS */
     .about {
-      padding: 96px 0;
-      background: var(--white);
+      text-align: center;
     }
 
     .about-inner {
-      display: flex;
-      gap: 80px;
-      align-items: center;
+      max-width: 760px;
+      margin: 0 auto;
     }
 
-    .about-text {
-      flex: 1;
+    .about .h2 {
+      font-size: clamp(30px, 3.4vw, 42px);
+      line-height: 1.25;
+      margin-bottom: 34px;
     }
 
-    .about-text p {
-      font-size: 15px;
+    .about p {
+      font-size: 17px;
       color: var(--muted);
-      line-height: 1.75;
-      margin-bottom: 16px;
+      max-width: 620px;
+      margin: 0 auto 18px;
       text-wrap: pretty;
     }
 
-    .about-text p:last-of-type {
-      margin-bottom: 36px;
+    .about-quote {
+      margin-top: 46px;
+      padding-top: 40px;
+      border-top: 1px solid var(--line);
+      font-size: clamp(21px, 2.2vw, 26px);
+      font-weight: 300;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      text-wrap: balance;
     }
 
-    .about-stats {
-      display: flex;
+    /* OFERTA */
+    .sec-head {
+      margin-bottom: 64px;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: 300px 1fr;
       gap: 48px;
+      padding: 52px 0;
+      border-top: 1px solid var(--line-strong);
     }
 
-    .stat-num {
-      font-family: var(--ff-h);
-      font-size: 44px;
+    .team:last-of-type {
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .team-name {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      line-height: 1.6;
+    }
+
+    .team-role {
+      display: block;
+      font-size: 14px;
       font-weight: 400;
-      color: var(--accent);
-      line-height: 1;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      letter-spacing: 0.02em;
+      text-transform: none;
+      color: var(--muted);
+      margin-top: 6px;
     }
 
-    .stat-icon {
-      flex-shrink: 0;
-      position: relative;
-      top: 1px;
+    .svc-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 48px;
     }
 
-    .stat-label {
+    .svc h3 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .svc p {
+      font-size: 15px;
+      color: var(--muted);
+      text-wrap: pretty;
+    }
+
+    .svc p+p {
+      margin-top: 10px;
+    }
+
+    .svc-note {
+      font-size: 14px !important;
+      color: var(--accent) !important;
+    }
+
+    .svc a.more {
+      display: inline-block;
+      margin-top: 12px;
       font-size: 12px;
       font-weight: 500;
-      color: var(--muted);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 2px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 4px 12px;
       margin-top: 4px;
     }
 
-    .about-img {
-      flex: 0 0 480px;
-      aspect-ratio: 4 / 3;
-      border-radius: 2px;
-      overflow: hidden;
-    }
-
-    .about-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    /* USLUGI */
-    .uslugi {
-      padding: 96px 0 60px;
-      background: var(--bg);
-    }
-
-    .uslugi-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .uslugi-header .section-sub {
-      margin: 0 auto;
-    }
-
-    .svc-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      max-width: 840px;
-      margin: 0 auto 20px;
-    }
-
-    .svc-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.55s ease-out, transform 0.55s ease-out;
-    }
-
-    .svc-card.svc-on {
-      opacity: 1;
-      transform: none;
-    }
-
-    .svc-img {
-      width: 100%;
-      aspect-ratio: 7 / 6;
-      overflow: hidden;
-    }
-
-    .svc-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .svc-body {
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .svc-num {
-      font-family: var(--ff-h);
-      font-size: 18px;
-      color: var(--accent);
-      opacity: 0.55;
-      margin-bottom: 8px;
-    }
-
-    .svc-title {
-      font-family: var(--ff-h);
-      font-size: 22px;
-      font-weight: 400;
-      color: var(--text);
-      margin-bottom: 8px;
-      line-height: 1.25;
-    }
-
-    .svc-desc {
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.6;
-      flex: 1;
-    }
-
-    .svc-price {
-      margin-top: auto;
-      padding-top: 18px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      margin-top: 16px;
-    }
-
-    .svc-val {
-      font-family: var(--ff-h);
-      font-size: 26px;
-      font-weight: 400;
-      color: var(--accent);
-    }
-
-    .svc-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--accent);
-      margin-left: auto;
-      transition: gap 0.2s;
-    }
-
-    .svc-more:hover {
-      gap: 8px;
-    }
-
-    .uslugi-cta {
-      text-align: center;
-      padding: 48px 0 0;
-    }
-
     /* CENNIK */
-    .cennik {
-      padding: 60px 0 96px;
-      background: var(--bg);
+    .price-wrap {
+      max-width: 860px;
     }
 
-    .cennik-header {
-      text-align: center;
-      margin-bottom: 40px;
+    .pcat {
+      border-top: 1px solid var(--line-strong);
     }
 
-    .tabs {
-      display: flex;
-      justify-content: center;
-      border-bottom: 1px solid var(--border);
-      overflow-x: auto;
-      scrollbar-width: none;
-      margin-bottom: 36px;
+    .pcat:last-of-type {
+      border-bottom: 1px solid var(--line-strong);
     }
 
-    .tabs::-webkit-scrollbar {
-      display: none;
-    }
-
-    .tab-btn {
-      font-family: var(--ff-b);
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 14px 28px;
-      background: none;
-      border: none;
-      border-bottom: 2px solid transparent;
-      color: var(--muted);
+    .pcat summary {
+      list-style: none;
       cursor: pointer;
-      white-space: nowrap;
-      transition: color 0.2s, border-color 0.2s;
-      margin-bottom: -1px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px 0;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
 
-    .tab-btn.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-
-    .tab-panel {
+    .pcat summary::-webkit-details-marker {
       display: none;
     }
 
-    .tab-panel.active {
-      display: block;
-    }
-
-    .price-list {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    .price-group-label {
-      font-family: var(--ff-b);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin: 24px 0 6px;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-    }
-
-    .price-group-label:first-child {
-      margin-top: 0;
-    }
-
-    .price-group-label.on {
-      opacity: 1;
-      transform: none;
-    }
-
-    .price-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding: 18px 0;
-      border-bottom: 1px solid var(--border);
-      gap: 16px;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-    }
-
-    .price-item.on {
-      opacity: 1;
-      transform: none;
-    }
-
-    .pi-name {
-      font-size: 15px;
-      color: var(--text);
-      flex: 1;
-    }
-
-    .pi-time {
-      font-size: 12px;
-      color: var(--muted);
-      white-space: nowrap;
-    }
-
-    .pi-val {
-      font-family: var(--ff-h);
-      font-size: 20px;
-      font-weight: 400;
-      color: var(--accent);
-      white-space: nowrap;
-      min-width: 64px;
-      text-align: right;
-    }
-
-    /* OPINIE */
-    .opinie {
-      padding: 96px 0;
-      background: linear-gradient(180deg, var(--white) 0%, #FBF6EC 100%);
-    }
-
-    .opinie-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .opinie-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .opinie-more {
-      display: flex;
-      justify-content: center;
-      margin-top: 36px;
-    }
-
-    .opinie-more a {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+    .pcat summary .count {
       font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: var(--accent);
-      transition: gap 0.2s;
-    }
-
-    .opinie-more a:hover {
-      gap: 9px;
-    }
-
-    .opinia {
-      background: var(--glass-bg);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border: 1px solid var(--glass-border);
-      border-radius: 2px;
-      padding: 36px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
-    }
-
-    .opinia-stars {
-      color: var(--accent);
-      font-size: 16px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
-
-    .opinia-text {
-      font-family: var(--ff-h);
-      font-style: italic;
-      font-size: 18px;
       font-weight: 400;
-      color: var(--text);
-      line-height: 1.6;
-      flex: 1;
-      margin-bottom: 24px;
-    }
-
-    .opinia-name {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-    }
-
-    .opinia-detail {
-      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: none;
       color: var(--muted);
-      margin-top: 3px;
+      margin-left: auto;
+    }
+
+    .pcat summary .pm {
+      position: relative;
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    .pcat summary .pm::before,
+    .pcat summary .pm::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      height: 1px;
+      background: var(--text);
+      transition: transform 0.3s;
+    }
+
+    .pcat summary .pm::after {
+      transform: rotate(90deg);
+    }
+
+    .pcat[open] summary .pm::after {
+      transform: rotate(0deg);
+    }
+
+    .plist {
+      list-style: none;
+      padding: 0 0 26px;
+    }
+
+    .plist li {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 11px 0;
+      font-size: 15px;
+    }
+
+    .plist li+li {
+      border-top: 1px solid var(--line);
+    }
+
+    .plist .pn {
+      flex: 1;
+      text-wrap: pretty;
+    }
+
+    .plist .pv {
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    .plist .sub {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .price-foot {
+      margin-top: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .price-foot p {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 460px;
     }
 
     /* SZKOLENIA */
-    .szkolenia {
-      padding: 96px 0;
-      background: linear-gradient(180deg, var(--white) 0%, #FBF6EC 100%);
-    }
-
-    .szkolenia-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .szkolenia-header .section-sub {
-      margin: 0 auto;
-    }
-
-    .szkolenia-grid {
+    .course {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      grid-template-columns: 300px 1fr;
+      gap: 48px;
+      padding: 56px 0;
+      border-top: 1px solid var(--line-strong);
     }
 
-    .szkolenie-card {
-      position: relative;
-      background: linear-gradient(160deg, rgba(255, 255, 255, 0.75) 0%, rgba(184, 147, 79, 0.035) 100%);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border: 1px solid rgba(184, 147, 79, 0.35);
-      border-radius: 2px;
-      padding: 32px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 8px 32px rgba(184, 147, 79, 0.1);
-      transition: opacity 0.55s ease-out, transform 0.55s ease-out, box-shadow 0.25s ease, border-color 0.25s ease;
-      overflow: hidden;
-    }
-
-    .szkolenie-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
-    }
-
-    .szkolenie-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(184, 147, 79, 0.6);
-      box-shadow: 0 16px 40px rgba(184, 147, 79, 0.18);
-    }
-
-    .szkolenie-num {
-      font-family: var(--ff-h);
-      font-size: 36px;
-      color: var(--accent);
-      opacity: 0.55;
-      margin-bottom: 6px;
+    .course-num {
+      display: block;
+      font-size: 54px;
+      font-weight: 300;
       line-height: 1;
-    }
-
-    .szkolenie-title {
-      font-family: var(--ff-h);
-      font-size: 22px;
-      font-weight: 400;
-      color: var(--text);
-      margin-bottom: 10px;
-      line-height: 1.25;
-    }
-
-    .szkolenie-desc {
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.6;
-      flex: 1;
-      margin-bottom: 20px;
-    }
-
-    .szkolenie-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(184, 147, 79, 0.25);
+      color: var(--accent);
       margin-bottom: 18px;
     }
 
-    .szkolenie-badge {
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      color: var(--accent-dark);
-      background: rgba(184, 147, 79, 0.1);
-      border: 1px solid rgba(184, 147, 79, 0.4);
-      border-radius: 20px;
-      padding: 5px 14px;
-    }
-
-    .szkolenie-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--accent-dark);
-      transition: gap 0.2s;
-    }
-
-    .szkolenie-cta:hover {
-      gap: 9px;
-    }
-
-    .szkolenia-proof {
-      margin-top: 64px;
-    }
-
-    .szkolenia-proof-label {
-      text-align: center;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent-dark);
-      margin-bottom: 24px;
-    }
-
-    .proof-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-
-    .proof-item {
-      position: relative;
-      overflow: hidden;
-      border-radius: 2px;
-      border: 1px solid rgba(184, 147, 79, 0.35);
-      box-shadow: 0 8px 24px rgba(184, 147, 79, 0.1);
-      aspect-ratio: 4 / 5;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-    }
-
-    .proof-item:hover {
-      transform: translateY(-4px);
-      border-color: rgba(184, 147, 79, 0.6);
-      box-shadow: 0 16px 36px rgba(184, 147, 79, 0.18);
-    }
-
-    .proof-item img,
-    .proof-item video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .proof-large {
-      grid-column: span 2;
-      aspect-ratio: 8 / 5;
-    }
-
-    .proof-wide {
-      grid-column: span 2;
-      aspect-ratio: 10 / 7;
-    }
-
-    .proof-full img {
-      object-fit: cover;
-      object-position: 50% 20%;
-    }
-
-    .proof-top video {
-      object-position: 50% 32%;
-    }
-
-    .proof-video video {
-      cursor: pointer;
-    }
-
-    .proof-play {
-      position: absolute;
-      inset: 0;
-      margin: auto;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: rgba(10, 10, 10, 0.55);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      cursor: pointer;
-      transition: background 0.2s ease, opacity 0.2s ease;
-    }
-
-    .proof-play:hover {
-      background: rgba(10, 10, 10, 0.75);
-    }
-
-    .proof-video.is-playing .proof-play {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .proof-fs {
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: rgba(10, 10, 10, 0.55);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      cursor: pointer;
-      opacity: 0;
-      transition: background 0.2s ease, opacity 0.2s ease;
-    }
-
-    .proof-video:hover .proof-fs,
-    .proof-video.is-playing .proof-fs {
-      opacity: 1;
-    }
-
-    .proof-fs:hover {
-      background: rgba(10, 10, 10, 0.75);
-    }
-
-    /* KONTAKT */
-    .kontakt {
-      padding: 96px 0;
-      background: var(--bg);
-    }
-
-    .kontakt-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .kontakt-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-
-    .kontakt-block {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      padding: 48px 40px;
-    }
-
-    .kontakt-title {
-      font-family: var(--ff-h);
-      font-size: 28px;
+    .course-title {
+      font-size: 24px;
       font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: 0.02em;
+      text-wrap: balance;
+    }
+
+    .course-meta {
+      margin-top: 14px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .course-body p {
+      font-size: 16px;
+      color: var(--muted);
+      text-wrap: pretty;
+      max-width: 680px;
+    }
+
+    .course-body p+p {
+      margin-top: 14px;
+    }
+
+    .course-body h4 {
+      margin: 30px 0 14px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
       color: var(--text);
+    }
+
+    .ticks {
+      list-style: none;
+      margin-bottom: 26px;
+    }
+
+    .ticks li {
+      position: relative;
+      padding: 9px 0 9px 30px;
+      font-size: 15px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ticks li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 21px;
+      width: 14px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .perks {
+      padding: 56px 0 0;
+      border-top: 1px solid var(--line-strong);
+    }
+
+    .perks h3 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .perks-grid {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .perks-grid li {
+      padding: 22px 20px 22px 0;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    .perks-grid li+li {
+      padding-left: 20px;
+      border-left: 1px solid var(--line);
+    }
+
+    .perks-grid span {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.1em;
       margin-bottom: 8px;
     }
 
-    .kontakt-sub {
-      font-size: 13px;
+    .medipay {
+      margin-top: 40px;
+      font-size: 16px;
       color: var(--muted);
-      margin-bottom: 32px;
-      line-height: 1.6;
+      max-width: 680px;
     }
 
-    .kontakt-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 0;
-      margin-bottom: 24px;
-      font-size: 15px;
+    .medipay strong {
       color: var(--text);
-      font-family: var(--ff-b);
+      font-weight: 500;
     }
 
-    .kontakt-icon {
-      width: 32px;
-      height: 32px;
+    .ask {
+      margin-top: 72px;
+      padding: 56px 48px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .ask p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto 30px;
+      text-wrap: pretty;
+    }
+
+    .btn-row {
       display: flex;
-      align-items: center;
+      gap: 12px;
       justify-content: center;
-      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+
+    .btn svg {
+      width: 15px;
+      height: 15px;
+      vertical-align: -3px;
+      margin-right: 8px;
+    }
+
+    /* KONTAKT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 48px;
+    }
+
+    .contact-grid .h2 {
+      font-size: clamp(26px, 2.6vw, 34px);
+    }
+
+    .crow {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 20px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+      align-items: baseline;
+    }
+
+    .crow:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .crow dt {
+      font-family: var(--ff);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
       color: var(--accent);
     }
 
-    .k-btn {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      background: var(--accent);
-      color: #fff;
-      font-family: var(--ff-b);
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+    .crow dd {
+      font-family: var(--ff);
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    .crow dd a {
+      border-bottom: 1px solid var(--line);
+      transition: border-color 0.25s;
+    }
+
+    .crow dd a:hover {
+      border-color: var(--text);
+    }
+
+    .crow dd .sep {
+      color: var(--muted);
+      margin: 0 10px;
+    }
+
+    /* FORMULARZ */
+    .form-head {
+      max-width: 820px;
+      margin-bottom: 54px;
+    }
+
+    .form-head .h2 {
+      font-size: clamp(40px, 6vw, 76px);
+      margin-bottom: 22px;
+    }
+
+    .form-head p {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      line-height: 1.8;
       text-transform: uppercase;
-      border-radius: 2px;
-      transition: background 0.22s;
-      margin-top: 24px;
+      color: var(--muted);
+      max-width: 620px;
     }
 
-    .k-btn:hover {
-      background: var(--accent-dark);
+    .cform {
+      max-width: 820px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 48px;
     }
 
-    .k-btn-ol {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      background: transparent;
-      color: var(--text);
-      font-family: var(--ff-b);
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: 1.5px solid var(--text);
-      border-radius: 2px;
-      transition: background 0.22s, color 0.22s;
-      margin-top: 12px;
-    }
-
-    .k-btn-ol:hover {
-      background: var(--text);
-      color: #fff;
-    }
-
-    .k-btn-row {
+    .field {
       display: flex;
-      gap: 12px;
-      margin-top: 12px;
+      flex-direction: column-reverse;
+      margin-bottom: 40px;
     }
 
-    .k-btn-row .k-btn-ol {
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field label {
+      margin-top: 14px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .field input,
+    .field textarea {
+      font-family: var(--ff);
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--text);
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--line-strong);
+      border-radius: 0;
+      padding: 12px 0;
+      outline: none;
+      width: 100%;
+      transition: border-color 0.25s;
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-bottom-color: var(--text);
+      box-shadow: 0 1px 0 var(--text);
+    }
+
+    .phone-wrap {
+      display: flex;
+      align-items: baseline;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .phone-wrap:focus-within {
+      border-bottom-color: var(--text);
+      box-shadow: 0 1px 0 var(--text);
+    }
+
+    .phone-wrap span {
+      font-size: 17px;
+      color: var(--muted);
+      padding-right: 12px;
+    }
+
+    .phone-wrap input {
+      border-bottom: none !important;
+      box-shadow: none !important;
+    }
+
+    .consent {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 34px;
+    }
+
+    .consent input {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      accent-color: var(--text);
+    }
+
+    .consent a {
+      color: var(--text);
+      border-bottom: 1px solid currentColor;
+    }
+
+    .hp {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .form-actions {
+      grid-column: 1 / -1;
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      flex: 1;
-      margin-top: 0;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .form-actions .btn {
+      padding: 18px 48px;
+    }
+
+    .form-actions .btn:disabled {
+      opacity: 0.5;
+      cursor: wait;
+    }
+
+    .form-msg {
+      font-size: 15px;
+    }
+
+    .form-msg.ok {
+      color: #2F6B3F;
+    }
+
+    .form-msg.err {
+      color: #A33A2B;
     }
 
     /* FOOTER */
     .footer {
-      background: #1a1a1a;
-      padding: 40px 0;
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
     }
 
     .footer-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
       gap: 16px;
     }
 
     .footer-logo {
-      font-family: var(--ff-h);
       font-size: 15px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.32em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      padding: 6px 14px;
     }
 
     .footer-pp {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.5);
-      transition: color 0.2s;
+      font-size: 13px;
+      color: var(--muted);
+      background: none;
+      border: none;
+      font-family: var(--ff);
+      cursor: pointer;
+      border-bottom: 1px solid var(--line);
     }
 
     .footer-pp:hover {
-      color: rgba(255, 255, 255, 0.8);
+      color: var(--text);
     }
 
-    /* PP MODAL */
+    /* POLITYKA PRYWATNOSCI */
     .pp-overlay {
-      display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 9999;
+      z-index: 200;
+      background: rgba(20, 16, 12, 0.55);
+      display: flex;
       align-items: center;
       justify-content: center;
       padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
     }
 
     .pp-overlay.active {
-      display: flex;
+      opacity: 1;
+      visibility: visible;
     }
 
     .pp-modal {
-      background: #fff;
-      max-width: 600px;
-      width: 100%;
-      max-height: 80vh;
-      overflow-y: auto;
-      padding: 48px 40px;
-      border-radius: 4px;
       position: relative;
+      background: #fff;
+      max-width: 680px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 48px 44px;
     }
 
     .pp-close {
       position: absolute;
-      top: 20px;
-      right: 24px;
+      top: 12px;
+      right: 12px;
+      width: 44px;
+      height: 44px;
       background: none;
       border: none;
-      font-size: 18px;
+      font-size: 20px;
       cursor: pointer;
-      color: var(--muted);
+      color: var(--text);
     }
 
     .pp-title {
-      font-family: var(--ff-h);
-      font-size: 28px;
-      font-weight: 400;
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       margin-bottom: 24px;
-      color: var(--text);
     }
 
     .pp-body h3 {
-      font-family: var(--ff-b);
       font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-weight: 500;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      margin: 20px 0 8px;
-      color: var(--text);
+      margin: 24px 0 8px;
     }
 
     .pp-body p {
-      font-size: 14px;
+      font-size: 15px;
       color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 4px;
     }
 
-    @media (max-width: 600px) {
-      .pp-modal {
-        padding: 36px 24px;
-      }
+    .pp-body strong {
+      color: var(--text);
+      font-weight: 500;
     }
 
     /* TABLET */
-    @media (max-width: 1024px) {
-      .about-img {
-        flex: 0 0 380px;
+    @media (max-width: 1080px) {
+      .nav-links {
+        gap: 22px;
       }
 
-      .about-inner {
-        gap: 48px;
+      .nav-links a {
+        letter-spacing: 0.14em;
+      }
+
+      .team,
+      .course,
+      .contact-grid {
+        grid-template-columns: 220px 1fr;
+        gap: 36px;
+      }
+
+      .perks-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .perks-grid li:nth-child(4) {
+        padding-left: 0;
+        border-left: none;
+      }
+
+      .perks-grid li:nth-child(n+4) {
+        border-top: 1px solid var(--line);
       }
     }
 
     @media (max-width: 900px) {
-      .about-inner {
-        flex-direction: column;
-      }
-
-      .about-img {
-        flex: none;
-        width: 100%;
-      }
-
-      .kontakt-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .br-mobile {
-      display: none;
-    }
-
-    #o-nas,
-    #uslugi,
-    #cennik,
-    #szkolenia,
-    #opinie,
-    #kontakt {
-      scroll-margin-top: 80px;
-    }
-
-    /* MOBILE */
-    @media (max-width: 768px) {
-      .br-mobile {
-        display: inline;
-      }
-
-      .container {
-        padding: 0 20px;
-      }
-
-      /* Nav */
-      .nav-inner {
-        padding: 0 20px;
-      }
-
       .nav-links {
         display: none;
       }
 
-      .btn-nav {
-        display: none;
-      }
-
       .hamburger {
-        display: flex;
+        display: block;
       }
 
-      /* Hero mobile - fullscreen z gradientem */
-      .hero {
-        position: relative;
-        height: calc(100svh - var(--nav-h));
+      .nav-inner {
+        justify-content: flex-end;
+      }
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      :root {
+        --side: 22px;
+        --nav-h: 64px;
       }
 
-      .hero-img {
-        position: absolute;
-        inset: 0;
-        z-index: 0;
+      body {
+        font-size: 15px;
+      }
+
+      .section {
+        padding: 64px 0;
+      }
+
+      .nav-brand {
+        left: 22px;
+        font-size: 14px;
       }
 
       .hero-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center top;
+        object-position: center 35%;
       }
 
       .hero-img::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(18, 15, 10, 0.92) 0%, rgba(18, 15, 10, 0.62) 48%, rgba(18, 15, 10, 0.12) 100%);
-      }
-
-      .hero-badge {
-        display: none;
+        background: linear-gradient(to top,
+            rgba(20, 14, 10, 0.88) 0%,
+            rgba(20, 14, 10, 0.78) 22%,
+            rgba(20, 14, 10, 0.45) 42%,
+            rgba(20, 14, 10, 0) 62%);
       }
 
       .hero-text {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-        justify-content: flex-end;
-        padding: 0 24px 48px;
-      }
-
-      .hero-label {
-        color: rgba(255, 255, 255, 0.85);
-        margin-bottom: 6px;
-        letter-spacing: 0.05em;
-        white-space: nowrap;
+        left: 22px;
+        right: 22px;
+        bottom: 56px;
+        text-align: center;
       }
 
       .hero-h1 {
-        font-size: 36px;
-        color: #fff;
-        text-shadow: 0 2px 24px rgba(0, 0, 0, 0.8);
-        margin-bottom: 10px;
+        font-size: clamp(46px, 14vw, 72px);
+        letter-spacing: 0.08em;
+        margin-right: -0.08em;
       }
 
-      .hero-sub {
+      .hero-tags {
+        margin-top: 22px;
+      }
+
+      .hero-tags li {
         font-size: 16px;
-        line-height: 1.7;
-        color: rgba(255, 255, 255, 0.9);
-        text-shadow: 0 1px 16px rgba(0, 0, 0, 0.95), 0 1px 3px rgba(0, 0, 0, 0.6);
-        margin-bottom: 24px;
-        max-width: none;
+        padding: 3px 0;
       }
 
-      .hero-rating-mobile {
-        display: inline;
+      .about {
+        text-align: left;
       }
 
-      .hero-btns {
+      .about p {
+        margin-left: 0;
+      }
+
+      .about .h2 {
+        font-size: 32px;
+      }
+
+      .about-quote {
+        margin-top: 34px;
+        padding-top: 30px;
+      }
+
+      .sec-head {
+        margin-bottom: 40px;
+      }
+
+      .team,
+      .course,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .team {
+        padding: 40px 0;
+      }
+
+      .svc-list {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .svc h3 {
+        font-size: 19px;
+      }
+
+      .pcat summary {
+        font-size: 14px;
+        letter-spacing: 0.14em;
+        padding: 22px 0;
+      }
+
+      .plist li {
+        font-size: 15px;
+        gap: 12px;
+      }
+
+      .price-foot {
         flex-direction: column;
         align-items: stretch;
-        gap: 12px;
       }
 
-      .hero-btns .btn {
-        text-align: center;
+      .course {
+        padding: 44px 0;
       }
 
-      .hero-btns .btn-outline {
-        color: #fff;
-        border-color: rgba(255, 255, 255, 0.7);
-        background: rgba(255, 255, 255, 0.12);
-        backdrop-filter: blur(8px);
+      .course-num {
+        font-size: 44px;
+        margin-bottom: 12px;
       }
 
-      .hero-btns .btn-outline:hover {
-        background: rgba(255, 255, 255, 0.22);
+      .course-title {
+        font-size: 22px;
       }
 
-      /* About */
-      .about {
-        padding: 64px 0 40px;
+      .course-body p {
+        font-size: 15px;
       }
 
-      .about-stats {
-        gap: 28px;
-        flex-wrap: nowrap;
-        justify-content: center;
-        text-align: center;
+      .perks {
+        padding-top: 44px;
       }
 
-      /* Uslugi */
-      .uslugi {
-        padding: 40px 0 40px;
-      }
-
-      .svc-grid {
+      .perks-grid {
         grid-template-columns: 1fr;
-        max-width: none;
       }
 
-      /* Cennik */
-      .cennik {
-        padding: 20px 0 40px;
-      }
-
-      .tabs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border-bottom: none;
-        gap: 8px;
-        overflow-x: visible;
-        margin-bottom: 28px;
-      }
-
-      .tab-btn {
-        border: 1px solid var(--border);
-        background: var(--white);
-        text-align: center;
-        white-space: normal;
-        border-bottom: 1px solid var(--border);
-        margin-bottom: 0;
-        border-radius: 2px;
-        padding: 12px 8px;
-      }
-
-      .tab-btn.active {
-        background: var(--accent);
-        color: #fff;
-        border-color: var(--accent);
-      }
-
-      /* Szkolenia */
-      .szkolenia {
-        padding: 40px 0;
-      }
-
-      .szkolenia-grid {
-        grid-template-columns: 1fr;
+      .perks-grid li,
+      .perks-grid li+li,
+      .perks-grid li:nth-child(4) {
+        padding: 16px 0;
+        border-left: none;
+        display: flex;
         gap: 16px;
+        align-items: baseline;
       }
 
-      .szkolenie-card {
-        padding: 28px;
+      .perks-grid li+li {
+        border-top: 1px solid var(--line);
       }
 
-      .szkolenia-proof {
-        margin-top: 40px;
+      .perks-grid span {
+        margin: 0;
       }
 
-      .proof-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+      .ask {
+        margin-top: 52px;
+        padding: 40px 22px;
       }
 
-      .proof-full img {
-        object-fit: contain;
-        object-position: 50% 50%;
-        background: #FBF6EC;
+      .ask p {
+        font-size: 17px;
       }
 
-      /* Opinie */
-      .opinie {
-        padding: 40px 0 32px;
+      .btn-row {
+        flex-direction: column;
+        align-items: stretch;
       }
 
-      .opinie-grid {
+      .contact-grid .h2 {
+        font-size: 32px;
+      }
+
+      .crow {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 18px 0;
+      }
+
+      .crow dd {
+        font-size: 18px;
+      }
+
+      .form-head {
+        margin-bottom: 40px;
+      }
+
+      .form-head .h2 {
+        font-size: 44px;
+      }
+
+      .form-head p {
+        font-size: 14px;
+        letter-spacing: 0.08em;
+      }
+
+      .cform {
         grid-template-columns: 1fr;
       }
 
-      .opinia {
-        padding: 28px;
+      .field {
+        margin-bottom: 32px;
       }
 
-      /* Kontakt */
-      .kontakt {
-        padding: 40px 0;
+      .form-actions .btn {
+        width: 100%;
       }
 
-      .kontakt-grid {
-        gap: 20px;
-      }
-
-      .kontakt-block {
-        padding: 28px 24px;
-      }
-
-      .kontakt-sub {
-        margin-bottom: 20px;
-      }
-
-      .kontakt-row {
-        padding: 10px 0;
-        margin-bottom: 16px;
-      }
-
-      .k-btn {
-        margin-top: 16px;
-      }
-
-      /* Footer */
       .footer-inner {
         flex-direction: column;
-        gap: 20px;
-        text-align: center;
+        gap: 12px;
+      }
+
+      .pp-modal {
+        padding: 44px 24px 32px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .fade,
+      .hero-h1,
+      .hero-tags li {
+        animation: none;
+        transition: none;
+        opacity: 1;
+        transform: none;
       }
     }
   </style>
@@ -1676,661 +1433,613 @@
 <body>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" id="nav" aria-label="Menu główne">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">Beauty Up</a>
-      <div class="nav-links">
-        <a href="#uslugi">Usługi</a>
-        <a href="#cennik">Cennik</a>
-        <a href="#szkolenia">Szkolenia</a>
-        <a href="#opinie">Opinie</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
-        class="btn-nav">Booksy</a>
-      <div class="nav-socials">
-        <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="nav-soc" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank" class="nav-soc"
-          aria-label="Facebook">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-          </svg>
-        </a>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Otwórz menu">
+      <a href="#" class="nav-brand">Beauty Up</a>
+      <ul class="nav-links">
+        <li><a href="#o-nas">O nas</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#cennik">Cennik</a></li>
+        <li><a href="#szkolenia">Szkolenia stacjonarne</a></li>
+        <li><a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki" target="_blank"
+            rel="noopener">Zapisy</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+
   <div class="mmenu" id="mmenu">
-    <a href="#kontakt" class="mmenu-cta">Umów wizytę</a>
-    <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
-      class="mmenu-cta-ol">Rezerwuj przez Booksy</a>
-    <a href="#uslugi">Usługi</a>
+    <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki" target="_blank" rel="noopener"
+      class="cta">Zapisy</a>
+    <a href="#o-nas">O nas</a>
+    <a href="#oferta">Oferta</a>
     <a href="#cennik">Cennik</a>
     <a href="#szkolenia">Szkolenia</a>
-    <a href="#opinie">Opinie</a>
     <a href="#kontakt">Kontakt</a>
-    <div class="mmenu-socials">
-      <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="mmenu-soc" aria-label="Instagram">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-          stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-        </svg>
-      </a>
-      <a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank" class="mmenu-soc"
-        aria-label="Facebook">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-        </svg>
-      </a>
-    </div>
   </div>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <span class="hero-label">Salon Kosmetyczny i Fryzjerski · Suwałki</span>
-      <h1 class="hero-h1">Piękno dopracowane w każdym detalu</h1>
-      <p class="hero-sub"><span class="hero-rating-mobile">5.0 ★ średnia ocena Booksy<br></span>2000+ zadowolonych
-        klientek i klientów</p>
-      <div class="hero-btns">
-        <a href="#kontakt" class="btn btn-primary">Umów wizytę</a>
-        <a href="#cennik" class="btn btn-outline">Zobacz cennik</a>
-      </div>
-    </div>
+  <header class="hero">
     <div class="hero-img">
-      <img src="hero.jpg" alt="Beauty Up - salon kosmetyczny i fryzjerski w Suwałkach">
-      <div class="hero-badge">
-        <span class="hero-badge-stars">★★★★★</span>
-        <span class="hero-badge-text">5.0 / 5<span>263 opinie Booksy</span></span>
-      </div>
+      <img src="hero.jpg" alt="Naturalnie podkreślone brwi i rzęsy, efekt pracy Beauty Up" fetchpriority="high">
     </div>
-  </section>
+    <div class="hero-text">
+      <h1 class="hero-h1">Beauty Up</h1>
+      <ul class="hero-tags">
+        <li>indywidualne podejście</li>
+        <li>doświadczenie</li>
+        <li>naturalne efekty</li>
+      </ul>
+    </div>
+  </header>
 
   <!-- O NAS -->
-  <section class="about" id="o-nas">
+  <section class="section about" id="o-nas">
     <div class="container">
       <div class="about-inner">
-        <div class="about-text">
-          <span class="section-label fade">O nas</span>
-          <h2 class="section-h2 fade d1">Zespół, który dba o każdy detal</h2>
-          <p class="fade d2">Cieszymy się, że tu trafiłaś/eś! Beauty Up to salon kosmetyczno-fryzjerski w sercu Suwałk,
-            w
-            którym połączyliśmy fryzjerstwo, stylizację brwi i rzęs, paznokcie, makijaż oraz makijaż permanentny pod
-            jednym dachem.</p>
-          <p class="fade d3">Nasz zespół tworzy pięć specjalistek z wieloletnim doświadczeniem i pasją do swojej
-            dziedziny - od barberki, przez stylistki paznokci, po linergistkę i fryzjerkę specjalizującą się w
-            koloryzacji. Każda wizyta to indywidualne podejście i dbałość o najmniejszy szczegół.</p>
-          <div class="about-stats">
-            <div class="fade d3">
-              <div class="stat-num">5<svg class="stat-icon" width="30" height="30" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" />
-                  <circle cx="10" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg></div>
-              <div class="stat-label">ekspertek w zespole</div>
-            </div>
-            <div class="fade d4">
-              <div class="stat-num">50+</div>
-              <div class="stat-label">zabiegów w ofercie</div>
-            </div>
-          </div>
-        </div>
-        <div class="about-img fade d2">
-          <img src="o-nas.jpg" alt="Wnętrze salonu Beauty Up w Suwałkach">
-        </div>
+        <span class="label fade">O nas</span>
+        <h2 class="h2 fade d1">Tworzymy miejsce, w którym doświadczenie spotyka się z indywidualnym podejściem.</h2>
+        <p class="fade d2">Skupiamy się na naturalnych efektach. Wierzymy w piękno, które nie potrzebuje przesady.</p>
+        <p class="fade d3">Każdy zabieg dobieramy z myślą o Twoich potrzebach, urodzie i komforcie. Stawiamy na jakość
+          i precyzję.</p>
+        <p class="about-quote fade d4">Podkreślamy Twoje piękno. Nie zmieniamy tego, co czyni Cię wyjątkową.</p>
       </div>
     </div>
   </section>
 
-  <!-- USLUGI -->
-  <section class="uslugi" id="uslugi">
+  <!-- OFERTA -->
+  <section class="section alt" id="oferta">
     <div class="container">
-      <div class="uslugi-header">
-        <span class="section-label fade">Oferta</span>
-        <h2 class="section-h2 fade d1">Co dla Ciebie mamy</h2>
-        <p class="section-sub fade d2">Cztery kategorie usług, jeden salon.<br>Każda wykonana z dbałością o szczegóły i
-          indywidualnym podejściem do klientki.</p>
+      <div class="sec-head">
+        <span class="label fade">Oferta</span>
+        <h2 class="h2 fade d1">Nasze usługi</h2>
       </div>
-      <div class="svc-grid">
-        <div class="svc-card">
-          <div class="svc-img"><img src="01.jpg" alt="Fryzjerstwo w Beauty Up"></div>
-          <div class="svc-body">
-            <span class="svc-num">01</span>
-            <h3 class="svc-title">Fryzjerstwo</h3>
-            <p class="svc-desc">Strzyżenia damskie, męskie i dziecięce, barbering, koloryzacja oraz zabiegi
-              pielęgnacyjne na włosy. Fryzura dopasowana do Twojego stylu.</p>
-            <div class="svc-price">
-              <span class="svc-val">od 60 zł</span>
-              <a href="#cennik" class="svc-more" data-tab="fryzjerstwo">Zobacz cennik <svg width="12" height="12"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg></a>
-            </div>
-          </div>
+
+      <div class="team">
+        <div class="fade">
+          <h3 class="team-name">Anita Grzędzińska<span class="team-role">makijaż permanentny, brwi, makijaż,
+              szkolenia</span></h3>
         </div>
-        <div class="svc-card">
-          <div class="svc-img"><img src="02.jpg" alt="Stylizacja paznokci w Beauty Up"></div>
-          <div class="svc-body">
-            <span class="svc-num">02</span>
-            <h3 class="svc-title">Paznokcie</h3>
-            <p class="svc-desc">Manicure klasyczny, stylizacja hybrydowa i żelowa oraz przedłużanie paznokci. Trwały
-              efekt i dbałość o zdrowie naturalnej płytki.</p>
-            <div class="svc-price">
-              <span class="svc-val">od 60 zł</span>
-              <a href="#cennik" class="svc-more" data-tab="paznokcie">Zobacz cennik <svg width="12" height="12"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg></a>
-            </div>
-          </div>
-        </div>
-        <div class="svc-card">
-          <div class="svc-img"><img src="03.jpg" alt="Stylizacja brwi i rzęs w Beauty Up"></div>
-          <div class="svc-body">
-            <span class="svc-num">03</span>
-            <h3 class="svc-title">Stylizacja brwi i rzęs</h3>
-            <p class="svc-desc">Laminacja i henna brwi, regulacja, laminacja i lifting rzęs. Kształt i kolor dopasowane
-              do rysów Twojej twarzy.</p>
-            <div class="svc-price">
-              <span class="svc-val">od 30 zł</span>
-              <a href="#cennik" class="svc-more" data-tab="brwi">Zobacz cennik <svg width="12" height="12"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg></a>
-            </div>
-          </div>
-        </div>
-        <div class="svc-card">
-          <div class="svc-img"><img src="04.jpg" alt="Makijaż okolicznościowy i permanentny w Beauty Up"></div>
-          <div class="svc-body">
-            <span class="svc-num">04</span>
-            <h3 class="svc-title">Makijaż okolicznościowy i permanentny</h3>
-            <p class="svc-desc">Makijaż okolicznościowy i ślubny oraz naturalny makijaż permanentny brwi. Delikatny
-              efekt, który podkreśla Twoje atuty.</p>
-            <div class="svc-price">
-              <span class="svc-val">od 220 zł</span>
-              <a href="#cennik" class="svc-more" data-tab="makijaz">Zobacz cennik <svg width="12" height="12"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg></a>
-            </div>
-          </div>
+        <div class="svc-list">
+          <article class="svc fade d1">
+            <h3>Makijaż permanentny brwi</h3>
+            <p>Brwi metodą pudrową to najbardziej uniwersalna metoda pigmentacji, która pozwoli Twoim brwiom nadać
+              kształt i harmonię. Przed pigmentacją wspólnie ustalamy kształt i odcień. Najbardziej bliska nam jest
+              praca w kierunku naturalnych i subtelnych wygojeń, niczym efekt henny pudrowej.</p>
+            <p>Przed zabiegiem zalecamy darmową konsultację, podczas której wspólnie ustalamy oczekiwany efekt.</p>
+            <p class="svc-note">Płatność za zabieg możesz rozłożyć na wygodne raty dzięki systemowi MediPay.</p>
+          </article>
+          <article class="svc fade d2">
+            <h3>Szkolenia ze stylizacji brwi</h3>
+            <p>Prowadzimy szkolenia z zakresu stylizacji brwi henną pudrową oraz laminacji brwi. Szkolenia są
+              indywidualne i prowadzone w trybie stacjonarnym, jednodniowe lub dwudniowe (szkolenie łączone z henny
+              pudrowej i laminacji brwi z koloryzacją).</p>
+            <p class="svc-note">Płatność za szkolenia możesz rozłożyć na wygodne raty dzięki systemowi MediPay.</p>
+            <a href="#szkolenia" class="more">Zobacz szkolenia</a>
+          </article>
+          <article class="svc fade d1">
+            <h3>Pakiety ślubne z dojazdem</h3>
+            <p>Pakiety ślubne realizowane z czterema lub pięcioma makijażami: makijaż próbny, ślubny oraz dwa lub trzy
+              makijaże bliskich osób w dniu ślubu. Dokładną ofertę wysyłamy po wcześniejszym kontakcie telefonicznym
+              lub przez social media.</p>
+          </article>
+          <article class="svc fade d2">
+            <h3>Makijaż ślubny i okolicznościowy</h3>
+            <p>Makijaż tworzony z dbałością o każdy detal. Praca na najwyższej jakości kosmetykach.</p>
+          </article>
+          <article class="svc fade d1">
+            <h3>Stylizacja brwi</h3>
+            <p>Stylizacja brwi henną pudrową lub farbką to zabieg nadający brwiom nowy, harmonijny kształt i kolor.
+              Laminacja brwi również podkreśla kształt i kolor, ale dodatkowo układa włos w pożądanym kierunku.</p>
+            <p>Henna pudrowa oraz farba utrzymują się średnio do tygodnia na skórze i do miesiąca na włosie. Laminacja
+              brwi pozwala zachować efekt ułożonych włosków do półtora miesiąca.</p>
+          </article>
+          <article class="svc fade d2">
+            <h3>Remover</h3>
+            <span class="badge">Nowość od grudnia</span>
+          </article>
         </div>
       </div>
-      <div class="uslugi-cta fade">
-        <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
-          class="btn btn-primary">Zarezerwuj przez Booksy</a>
+
+      <div class="team">
+        <div class="fade">
+          <h3 class="team-name">Ewelina Majewska<span class="team-role">barber</span></h3>
+        </div>
+        <div class="svc-list">
+          <article class="svc fade d1">
+            <h3>Strzyżenie włosów i brody</h3>
+            <p>Strzyżenie wykonywane na najwyższym poziomie z dbałością o każdy detal. Całość uzupełniona myciem
+              i stylizacją włosów profesjonalnymi kosmetykami.</p>
+          </article>
+          <article class="svc fade d2">
+            <h3>Męska strefa pielęgnacji</h3>
+            <p>Strzyżenie włosów lub brody połączone z czarną maską oczyszczającą oraz kolagenowymi płatkami pod oczy.
+              Całość dopełniona depilacją woskiem.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="team">
+        <div class="fade">
+          <h3 class="team-name">Żaneta Heksel<br>Aneta Walendzewicz<span class="team-role">stylizacja paznokci</span>
+          </h3>
+        </div>
+        <div class="svc-list">
+          <article class="svc fade d1">
+            <h3>Stylizacja paznokci</h3>
+            <p>Manicure klasyczny (damski i męski), hybrydowy i żelowy, przedłużanie paznokci, a także french
+              konstrukcyjny i manicure japoński. Styl dobierany do Twoich preferencji.</p>
+          </article>
+          <article class="svc fade d2">
+            <h3>Dbałość o każdy szczegół</h3>
+            <p>Dbamy o dokładne opracowanie skórek, odpowiedni kształt i estetyczne wykończenie każdej stylizacji.
+              Pracujemy sterylnymi narzędziami, a produkty dobieramy indywidualnie do potrzeb płytki paznokciowej,
+              uwzględniając jej naturalną kondycję.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="team">
+        <div class="fade">
+          <h3 class="team-name">Martyna Leszczyńska<span class="team-role">fryzjerstwo</span></h3>
+        </div>
+        <div class="svc-list">
+          <article class="svc fade d1">
+            <h3>Strzyżenia damskie, męskie i dziecięce</h3>
+            <p>Szeroki wachlarz strzyżeń wykonywany przez doświadczoną fryzjerkę. Całość uzupełniona profesjonalną
+              stylizacją włosów.</p>
+          </article>
+          <article class="svc fade d2">
+            <h3>Koloryzacje włosów</h3>
+            <p>Profesjonalna koloryzacja dopasowana do Twojego stylu i urody. Od subtelnego odświeżenia koloru po
+              bardziej spektakularne metamorfozy.</p>
+          </article>
+          <article class="svc fade d1">
+            <h3>Regeneracja włosów</h3>
+            <p>Profesjonalne zabiegi regenerujące, odżywiające i wygładzające włosy. Kuracje dobierane do kondycji
+              i potrzeb włosów, po to aby zapewnić im kompleksową pielęgnację.</p>
+          </article>
+          <article class="svc fade d2">
+            <h3>Upięcia okolicznościowe</h3>
+            <p>Eleganckie upięcia, delikatne fale i bardziej klasyczne stylizacje na każdą okazję. Fryzury dopasowane
+              do Twojego stylu i charakteru wydarzenia.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CENNIK -->
-  <section class="cennik" id="cennik">
+  <section class="section" id="cennik">
     <div class="container">
-      <div class="cennik-header">
-        <span class="section-label fade">Cennik</span>
-        <h2 class="section-h2 fade d1">Pełny cennik</h2>
-      </div>
-      <div class="tabs fade d2" id="tabs">
-        <button class="tab-btn active" data-tab="fryzjerstwo">Fryzjerstwo</button>
-        <button class="tab-btn" data-tab="paznokcie">Paznokcie</button>
-        <button class="tab-btn" data-tab="brwi">Brwi i rzęsy</button>
-        <button class="tab-btn" data-tab="makijaz">Makijaż i PMU</button>
+      <div class="sec-head">
+        <span class="label fade">Cennik</span>
+        <h2 class="h2 fade d1">Cennik usług</h2>
       </div>
 
-      <div class="tab-panel active" id="panel-fryzjerstwo">
-        <div class="price-list">
-          <div class="price-group-label">Strzyżenia</div>
-          <div class="price-item"><span class="pi-name">Strzyżenie damskie</span><span class="pi-time">30
-              min</span><span class="pi-val">70 zł</span></div>
-          <div class="price-item"><span class="pi-name">Strzyżenie damskie + mycie</span><span class="pi-time">30
-              min</span><span class="pi-val">75 zł</span></div>
-          <div class="price-item"><span class="pi-name">Strzyżenie męskie</span><span class="pi-time">30 min</span><span
-              class="pi-val">60 zł</span></div>
-          <div class="price-item"><span class="pi-name">Strzyżenie barberskie</span><span class="pi-time">40
-              min</span><span class="pi-val">70 zł</span></div>
-          <div class="price-item"><span class="pi-name">Strzyżenie brody</span><span class="pi-time">30 min</span><span
-              class="pi-val">60 zł</span></div>
-          <div class="price-item"><span class="pi-name">COMBO - strzyżenie włosów i brody</span><span class="pi-time">1g
-              10min</span><span class="pi-val">120 zł</span></div>
-          <div class="price-item"><span class="pi-name">Strzyżenie dziecięce (do 10 lat)</span><span class="pi-time">30
-              min</span><span class="pi-val">40 zł</span></div>
-          <div class="price-group-label">Koloryzacja i pielęgnacja</div>
-          <div class="price-item"><span class="pi-name">Farbowanie 1 kolor (włosy krótkie)</span><span
-              class="pi-time">2g</span><span class="pi-val">250 zł</span></div>
-          <div class="price-item"><span class="pi-name">Farbowanie 1 kolor (włosy średnie)</span><span
-              class="pi-time">2g</span><span class="pi-val">300 zł</span></div>
-          <div class="price-item"><span class="pi-name">Farbowanie 1 kolor (włosy długie)</span><span class="pi-time">2g
-              30min</span><span class="pi-val">350 zł</span></div>
-          <div class="price-item"><span class="pi-name">Pasemka / balayage</span><span class="pi-time">3g</span><span
-              class="pi-val">od 300 zł</span></div>
-          <div class="price-item"><span class="pi-name">Tonowanie włosów</span><span class="pi-time">1g</span><span
-              class="pi-val">od 150 zł</span></div>
-          <div class="price-item"><span class="pi-name">Laminowanie włosów</span><span class="pi-time">1g
-              15min</span><span class="pi-val">od 100 zł</span></div>
-          <div class="price-item"><span class="pi-name">Botoks na włosy</span><span class="pi-time">1g 30min</span><span
-              class="pi-val">od 200 zł</span></div>
-        </div>
-      </div>
-      <div class="tab-panel" id="panel-paznokcie">
-        <div class="price-list">
-          <div class="price-item"><span class="pi-name">Przedłużanie żelem</span><span class="pi-time">2g</span><span
-              class="pi-val">od 180 zł</span></div>
-          <div class="price-item"><span class="pi-name">Stylizacja hybrydowa</span><span class="pi-time">1g</span><span
-              class="pi-val">od 110 zł</span></div>
-          <div class="price-item"><span class="pi-name">Żel na naturalnej płytce</span><span class="pi-time">1g
-              20min</span><span class="pi-val">od 130 zł</span></div>
-          <div class="price-item"><span class="pi-name">Uzupełnienie do 4 tygodni</span><span class="pi-time">1g
-              20min</span><span class="pi-val">od 140 zł</span></div>
-          <div class="price-item"><span class="pi-name">Uzupełnienie powyżej 4 tygodni</span><span class="pi-time">2g
-              20min</span><span class="pi-val">od 150 zł</span></div>
-          <div class="price-item"><span class="pi-name">Manicure klasyczny (damski i męski)</span><span
-              class="pi-time">40 min</span><span class="pi-val">60 zł</span></div>
-          <div class="price-item"><span class="pi-name">Zdjęcie stylizacji</span><span class="pi-time">30
-              min</span><span class="pi-val">od 50 zł</span></div>
-          <div class="price-item"><span class="pi-name">French konstrukcyjny</span><span class="pi-time">5g</span><span
-              class="pi-val">od 300 zł</span></div>
-        </div>
-      </div>
-      <div class="tab-panel" id="panel-brwi">
-        <div class="price-list">
-          <div class="price-item"><span class="pi-name">Laminacja brwi + koloryzacja + regulacja</span><span
-              class="pi-time">1g</span><span class="pi-val">150 zł</span></div>
-          <div class="price-item"><span class="pi-name">Laminacja brwi + regulacja</span><span class="pi-time">50
-              min</span><span class="pi-val">120 zł</span></div>
-          <div class="price-item"><span class="pi-name">Henna pudrowa + regulacja</span><span class="pi-time">50
-              min</span><span class="pi-val">90 zł</span></div>
-          <div class="price-item"><span class="pi-name">Regulacja brwi</span><span class="pi-time">15 min</span><span
-              class="pi-val">30 zł</span></div>
-          <div class="price-item"><span class="pi-name">Regeneracja brwi botoksem + regulacja</span><span
-              class="pi-time">20 min</span><span class="pi-val">50 zł</span></div>
-          <div class="price-item"><span class="pi-name">Koreańska laminacja rzęs</span><span
-              class="pi-time">1g</span><span class="pi-val">180 zł</span></div>
-          <div class="price-item"><span class="pi-name">Lifting rzęs + koloryzacja</span><span
-              class="pi-time">1g</span><span class="pi-val">150 zł</span></div>
-          <div class="price-item"><span class="pi-name">Pakiet Premium (laminacja brwi + lifting rzęs)</span><span
-              class="pi-time">1g 15min</span><span class="pi-val">260 zł</span></div>
-        </div>
-      </div>
-      <div class="tab-panel" id="panel-makijaz">
-        <div class="price-list">
-          <div class="price-item"><span class="pi-name">Makijaż okolicznościowy</span><span class="pi-time">1g
-              15min</span><span class="pi-val">220 zł</span></div>
-          <div class="price-item"><span class="pi-name">Lekcja makijażu</span><span class="pi-time">4g</span><span
-              class="pi-val">400 zł</span></div>
-          <div class="price-item"><span class="pi-name">Makijaż permanentny brwi</span><span class="pi-time">2g
-              15min</span><span class="pi-val">800 zł</span></div>
-          <div class="price-item"><span class="pi-name">Korekta makijażu permanentnego (do 2 mies.)</span><span
-              class="pi-time">1g</span><span class="pi-val">100 zł</span></div>
-          <div class="price-item"><span class="pi-name">Konsultacja makijażu permanentnego (brwi)</span><span
-              class="pi-time">15
-              min</span><span class="pi-val">bezpłatnie</span></div>
+      <div class="price-wrap">
+        <details class="pcat fade" open>
+          <summary>Brwi i rzęsy <span class="count">14</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Regulacja brwi</span><span class="pv">30 zł</span></li>
+            <li><span class="pn">Regeneracja brwi botoksem + regulacja</span><span class="pv">50 zł</span></li>
+            <li><span class="pn">Koloryzacja rzęs farbką</span><span class="pv">50 zł</span></li>
+            <li><span class="pn">Koloryzacja brwi farbką</span><span class="pv">80 zł</span></li>
+            <li><span class="pn">Henna pudrowa + regulacja</span><span class="pv">90 zł</span></li>
+            <li><span class="pn">SPA Brows, regeneracja i stylizacja brwi</span><span class="pv">100 zł</span></li>
+            <li><span class="pn">Laminacja brwi + regulacja</span><span class="pv">120 zł</span></li>
+            <li><span class="pn">Laminacja brwi + koloryzacja + regulacja</span><span class="pv">150 zł</span></li>
+            <li><span class="pn">Lifting rzęs + koloryzacja</span><span class="pv">150 zł</span></li>
+            <li><span class="pn">Koreańska laminacja rzęs</span><span class="pv">180 zł</span></li>
+            <li><span class="pn">Pakiet Classic <span class="sub">(henna pudrowa + lifting rzęs)</span></span><span
+                class="pv">190 zł</span></li>
+            <li><span class="pn">Pakiet Premium <span class="sub">(laminacja brwi + lifting rzęs)</span></span><span
+                class="pv">260 zł</span></li>
+            <li><span class="pn">Pakiet Wedding Brows &amp; Lashes</span><span class="pv">330 zł</span></li>
+            <li><span class="pn">Szkolenie ze stylizacji brwi</span><span class="pv">wycena indywidualna</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Makijaż permanentny <span class="count">3</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Konsultacja przed makijażem permanentnym brwi</span><span class="pv">bezpłatna</span>
+            </li>
+            <li><span class="pn">Makijaż permanentny brwi</span><span class="pv">800 zł</span></li>
+            <li><span class="pn">Korekta makijażu permanentnego <span class="sub">(do 2 miesięcy)</span></span><span
+                class="pv">100 zł</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Makijaż <span class="count">2</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Makijaż okolicznościowy</span><span class="pv">250 zł</span></li>
+            <li><span class="pn">Lekcja makijażu</span><span class="pv">400 zł</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Strzyżenia <span class="count">14</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Strzyżenie dziecięce <span class="sub">(do 10 r.ż.)</span></span><span class="pv">40
+                zł</span></li>
+            <li><span class="pn">Strzyżenie damskie</span><span class="pv">70 zł</span></li>
+            <li><span class="pn">Strzyżenie damskie + mycie</span><span class="pv">75 zł</span></li>
+            <li><span class="pn">Strzyżenie męskie</span><span class="pv">60 zł</span></li>
+            <li><span class="pn">Strzyżenie męskie + odsiwianie</span><span class="pv">100 zł</span></li>
+            <li><span class="pn">Strzyżenie barberskie</span><span class="pv">70 zł</span></li>
+            <li><span class="pn">Strzyżenie + tonowanie włosów</span><span class="pv">120 zł</span></li>
+            <li><span class="pn">Strzyżenie brody</span><span class="pv">60 zł</span></li>
+            <li><span class="pn">Strzyżenie brody Premium</span><span class="pv">80 zł</span></li>
+            <li><span class="pn">Strzyżenie brody + tonowanie</span><span class="pv">100 zł</span></li>
+            <li><span class="pn">Combo <span class="sub">(strzyżenie włosów i brody)</span></span><span class="pv">120
+                zł</span></li>
+            <li><span class="pn">Combo Premium</span><span class="pv">140 zł</span></li>
+            <li><span class="pn">Combo + tonowanie brody</span><span class="pv">160 zł</span></li>
+            <li><span class="pn">Combo + tonowanie włosów i brody</span><span class="pv">210 zł</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Koloryzacja włosów <span class="count">7</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Tonowanie włosów</span><span class="pv">od 150 zł</span></li>
+            <li><span class="pn">Farbowanie włosów krótkich <span class="sub">(1 kolor)</span></span><span
+                class="pv">250 zł</span></li>
+            <li><span class="pn">Koloryzacja włosów średnich <span class="sub">(1 kolor)</span></span><span
+                class="pv">300 zł</span></li>
+            <li><span class="pn">Koloryzacja włosów długich <span class="sub">(1 kolor)</span></span><span
+                class="pv">350 zł</span></li>
+            <li><span class="pn">Pasemka bez odrostu</span><span class="pv">od 300 zł</span></li>
+            <li><span class="pn">Pasemka metodą niteczkową</span><span class="pv">od 300 zł</span></li>
+            <li><span class="pn">Ombre / Sombre</span><span class="pv">od 300 zł</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Regeneracja włosów <span class="count">5</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Laminowanie włosów</span><span class="pv">od 100 zł</span></li>
+            <li><span class="pn">Nanobotox Kaszmir</span><span class="pv">od 150 zł</span></li>
+            <li><span class="pn">Botoks na włosy</span><span class="pv">od 200 zł</span></li>
+            <li><span class="pn">Bioplastia</span><span class="pv">od 200 zł</span></li>
+            <li><span class="pn">Nanoplastia</span><span class="pv">od 400 zł</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Upięcia okolicznościowe <span class="count">3</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Loki, prostowanie</span><span class="pv">150 zł</span></li>
+            <li><span class="pn">Upięcie włosów</span><span class="pv">220 zł</span></li>
+            <li><span class="pn">Fale Hollywood</span><span class="pv">250 zł</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Stylizacja paznokci <span class="count">11</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Dorobienie paznokcia</span><span class="pv">od 10 zł</span></li>
+            <li><span class="pn">Manicure klasyczny damski i męski</span><span class="pv">60 zł</span></li>
+            <li><span class="pn">Laminacja paznokci <span class="sub">(pierwsza wizyta / kolejne)</span></span><span
+                class="pv">90 / 60 zł</span></li>
+            <li><span class="pn">Zdjęcie stylizacji</span><span class="pv">70 zł</span></li>
+            <li><span class="pn">Manicure japoński</span><span class="pv">100 zł</span></li>
+            <li><span class="pn">Stylizacja hybrydowa</span><span class="pv">130 zł</span></li>
+            <li><span class="pn">Żel na naturalnej płytce</span><span class="pv">150 zł</span></li>
+            <li><span class="pn">Uzupełnienie do 4 tygodni</span><span class="pv">160 zł</span></li>
+            <li><span class="pn">Uzupełnienie powyżej 4 tygodni</span><span class="pv">170 zł</span></li>
+            <li><span class="pn">Przedłużanie żelem</span><span class="pv">od 180 zł</span></li>
+            <li><span class="pn">French konstrukcyjny</span><span class="pv">od 300 zł</span></li>
+          </ul>
+        </details>
+
+        <details class="pcat fade">
+          <summary>Inne usługi <span class="count">3</span><span class="pm"></span></summary>
+          <ul class="plist">
+            <li><span class="pn">Depilacja woskiem nosa</span><span class="pv">15 zł</span></li>
+            <li><span class="pn">Depilacja woskiem uszu</span><span class="pv">15 zł</span></li>
+            <li><span class="pn">Regulacja brwi męskich</span><span class="pv">30 zł</span></li>
+          </ul>
+        </details>
+
+        <div class="price-foot fade">
+          <p>Aktualne ceny i wolne terminy znajdziesz na Booksy. Tam też zarezerwujesz wizytę w kilka sekund.</p>
+          <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki" target="_blank"
+            rel="noopener" class="btn btn-dark">Zapisz się na Booksy</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SZKOLENIA -->
-  <section class="szkolenia" id="szkolenia">
+  <section class="section alt" id="szkolenia">
     <div class="container">
-      <div class="szkolenia-header">
-        <span class="section-label fade">Szkolenia</span>
-        <h2 class="section-h2 fade d1">Rozwijaj się z Beauty Up</h2>
-        <p class="section-sub fade d2">Trzy jednodniowe szkolenia indywidualne<br class="br-mobile"> ze stylizacji
-          brwi.<br>Zapisy przyjmujemy przez Instagram.</p>
+      <div class="sec-head">
+        <span class="label fade">Szkolenia stacjonarne</span>
+        <h2 class="h2 fade d1">Szkolenia ze stylizacji brwi</h2>
+        <p class="lead fade d2" style="margin-top:22px">Indywidualne szkolenia prowadzone stacjonarnie w naszym
+          salonie. Jeden kursant, pełna uwaga prowadzącej i praca na modelkach.</p>
       </div>
-      <div class="szkolenia-grid">
-        <div class="szkolenie-card fade d1">
-          <span class="szkolenie-num">01</span>
-          <h3 class="szkolenie-title">Henna pudrowa z geometrią brwi</h3>
-          <p class="szkolenie-desc">Naturalna stylizacja i koloryzacja brwi. Nauczysz się architektury brwi, doboru
-            koloru, pracy z henną pudrową oraz uzyskiwania trwałego i estetycznego efektu.</p>
-          <div class="szkolenie-badges">
-            <span class="szkolenie-badge">Jednodniowe</span>
-            <span class="szkolenie-badge">Jednoosobowe</span>
-          </div>
-          <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="szkolenie-cta">Zapisz się przez
-            Instagram
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-        </div>
-        <div class="szkolenie-card fade d2">
-          <span class="szkolenie-num">02</span>
-          <h3 class="szkolenie-title">Laminacja brwi i koloryzacja</h3>
-          <p class="szkolenie-desc">Nowoczesna stylizacja brwi nadająca im idealny kształt i objętość. Poznasz
-            technikę laminacji i farbowania, dobór produktów oraz zasady bezpiecznej pracy, aby uzyskać naturalny i
-            długotrwały efekt.</p>
-          <div class="szkolenie-badges">
-            <span class="szkolenie-badge">Jednodniowe</span>
-            <span class="szkolenie-badge">Jednoosobowe</span>
-          </div>
-          <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="szkolenie-cta">Zapisz się przez
-            Instagram
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-        </div>
-        <div class="szkolenie-card fade d3">
-          <span class="szkolenie-num">03</span>
-          <h3 class="szkolenie-title">Brow Master</h3>
-          <p class="szkolenie-desc">Kompleksowe szkolenie ze stylizacji brwi obejmujące architekturę, hennę pudrową i
-            laminację z koloryzacją. Nauczysz się prawidłowego doboru produktów oraz wykonywania zabiegów, które
-            zapewniają naturalny i długotrwały efekt.</p>
-          <div class="szkolenie-badges">
-            <span class="szkolenie-badge">Jednodniowe</span>
-            <span class="szkolenie-badge">Jednoosobowe</span>
-          </div>
-          <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="szkolenie-cta">Zapisz się przez
-            Instagram
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="szkolenia-proof">
-        <p class="szkolenia-proof-label fade">Zobacz jak to wygląda</p>
-        <div class="proof-grid">
-          <div class="proof-item proof-large fade d1">
-            <img src="szkoleniezdj2.jpg" alt="Absolwentka szkolenia Beauty Up Academy z certyfikatem ukończenia" loading="lazy">
-          </div>
-          <div class="proof-item proof-full fade d2">
-            <img src="szkoleniezdj1.jpg" alt="Materiały szkoleniowe Beauty Up Academy" loading="lazy">
-          </div>
-          <div class="proof-item proof-video fade d3">
-            <video src="szkolenievid1.mp4" muted playsinline preload="metadata"></video>
-            <button class="proof-play" type="button" aria-label="Odtwórz wideo">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-            <button class="proof-fs" type="button" aria-label="Pełny ekran">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 3H5a2 2 0 0 0-2 2v3" />
-                <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
-                <path d="M3 16v3a2 2 0 0 0 2 2h3" />
-                <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-              </svg>
-            </button>
-          </div>
-          <div class="proof-item proof-wide proof-video proof-top fade d4">
-            <video src="szkolenievid2.mp4" muted playsinline preload="metadata"></video>
-            <button class="proof-play" type="button" aria-label="Odtwórz wideo">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-            <button class="proof-fs" type="button" aria-label="Pełny ekran">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 3H5a2 2 0 0 0-2 2v3" />
-                <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
-                <path d="M3 16v3a2 2 0 0 0 2 2h3" />
-                <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-              </svg>
-            </button>
-          </div>
-          <div class="proof-item proof-wide proof-video fade d5">
-            <video src="szkolenievid3.mp4" muted playsinline preload="metadata"></video>
-            <button class="proof-play" type="button" aria-label="Odtwórz wideo">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-            <button class="proof-fs" type="button" aria-label="Pełny ekran">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 3H5a2 2 0 0 0-2 2v3" />
-                <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
-                <path d="M3 16v3a2 2 0 0 0 2 2h3" />
-                <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- OPINIE -->
-  <section class="opinie" id="opinie">
-    <div class="container">
-      <div class="opinie-header">
-        <span class="section-label fade">Opinie</span>
-        <h2 class="section-h2 fade d1">Zaufało nam już 2000 klientek i klientów</h2>
+      <article class="course">
+        <div class="fade">
+          <span class="course-num">01</span>
+          <h3 class="course-title">Henna pudrowa z geometrią brwi</h3>
+          <p class="course-meta">1 dzień · indywidualnie</p>
+        </div>
+        <div class="course-body fade d1">
+          <p>Na szkoleniu przeprowadzę Cię przez cały proces stylizacji brwi henną pudrową. Nauczysz się dobierać
+            idealny kształt brwiom. Dzięki odpowiedniemu przygotowaniu brwi wydłużysz trwałość koloryzacji. Nauczysz
+            się dobierać odpowiedni kolor henny do urody klientki oraz wykonywać stylizację, która podkreśli naturalne
+            piękno i rysy twarzy.</p>
+          <p>Na szkolenie przygotowuję Ci obszerny skrypt, modelki i inne materiały pomocnicze. To szkolenie to
+            doskonały początek Twojej drogi w świecie profesjonalnej stylizacji brwi.</p>
+          <h4>Czego nauczysz się podczas szkolenia?</h4>
+          <ul class="ticks">
+            <li>Przygotowania brwi do zabiegu</li>
+            <li>Zasad geometrii i wyznaczania idealnego kształtu brwi</li>
+            <li>Doboru koloru henny pudrowej do typu urody i oczekiwanego efektu</li>
+            <li>Prawidłowej aplikacji henny oraz uzyskiwania równomiernego efektu</li>
+            <li>Technik regulacji</li>
+            <li>Zasad higieny, bezpieczeństwa i profesjonalnej obsługi klientki</li>
+          </ul>
+          <h4>Dlaczego warto?</h4>
+          <p>Szkolenie łączy wiedzę teoretyczną z praktyką, dzięki czemu możesz krok po kroku rozwijać swoje
+            umiejętności i nabierać pewności w pracy. To świetna propozycja zarówno dla osób rozpoczynających przygodę
+            ze stylizacją brwi, jak i dla stylistek, które chcą poszerzyć swoją ofertę o kolejną usługę.</p>
+        </div>
+      </article>
+
+      <article class="course">
+        <div class="fade">
+          <span class="course-num">02</span>
+          <h3 class="course-title">Laminacja brwi z koloryzacją</h3>
+          <p class="course-meta">1 dzień · indywidualnie</p>
+        </div>
+        <div class="course-body fade d1">
+          <p>Chcesz poszerzyć swoje umiejętności w branży beauty i nauczyć się wykonywać jeden z najbardziej
+            pożądanych zabiegów stylizacji brwi? To szkolenie to doskonała okazja, aby zdobyć nową wiedzę, poznać
+            profesjonalne techniki pracy i wprowadzić do oferty usługę, która cieszy się dużym zainteresowaniem
+            klientek.</p>
+          <p>Podczas szkolenia poznasz tajniki laminacji brwi, dzięki której można nadać włoskom odpowiedni kształt,
+            optycznie zwiększyć ich objętość i uzyskać efekt pięknie ułożonych, harmonijnych brwi.</p>
+          <h4>Czego nauczysz się podczas szkolenia?</h4>
+          <ul class="ticks">
+            <li>Budowy włosa oraz zasad pielęgnacji brwi</li>
+            <li>Prawidłowego przygotowania brwi do zabiegu</li>
+            <li>Doboru odpowiednich preparatów do rodzaju i kondycji włosków</li>
+            <li>Wykonywania laminacji krok po kroku</li>
+            <li>Prawidłowego ułożenia włosków</li>
+            <li>Łączenia laminacji z koloryzacją</li>
+            <li>Pielęgnacji pozabiegowej</li>
+          </ul>
+          <p>Niezależnie od tego, czy dopiero rozpoczynasz swoją przygodę ze stylizacją brwi, czy chcesz poszerzyć
+            dotychczasową ofertę, zdobędziesz wiedzę, która pomoże Ci rozwijać się w świecie beauty.</p>
+        </div>
+      </article>
+
+      <article class="course">
+        <div class="fade">
+          <span class="course-num">03</span>
+          <h3 class="course-title">Brow Master</h3>
+          <p class="course-meta">2 dni · indywidualnie</p>
+        </div>
+        <div class="course-body fade d1">
+          <p>Chcesz kompleksowo rozwinąć swoje umiejętności w stylizacji brwi? Szkolenie łączone z henny pudrowej
+            i laminacji brwi to doskonała propozycja dla osób, które chcą zdobyć wiedzę i praktyczne umiejętności
+            z zakresu dwóch popularnych technik stylizacji brwi. To najbardziej pożądane szkolenie w branży beauty.</p>
+          <h4>Czego nauczysz się podczas szkolenia?</h4>
+          <ul class="ticks">
+            <li>Prawidłowego przygotowania brwi do zabiegu</li>
+            <li>Doboru odpowiedniego zabiegu do urody i preferencji klientki</li>
+            <li>Wykonywania obu zabiegów krok po kroku</li>
+            <li>Technik aplikacji henny i farby</li>
+            <li>Prawidłowego układania włosków</li>
+            <li>Pielęgnacji pozabiegowej</li>
+            <li>Zasad higieny, bezpieczeństwa i profesjonalnej obsługi</li>
+          </ul>
+          <p>Szkolenie łączone to doskonała inwestycja w rozwój zawodowy i poszerzenie swojej oferty zabiegowej. Na
+            jednym szkoleniu poznajesz aż trzy zabiegi: hennę pudrową, laminację brwi oraz koloryzację brwi farbką.</p>
+        </div>
+      </article>
+
+      <div class="perks">
+        <h3 class="fade">Co otrzymujesz na każdym szkoleniu?</h3>
+        <ul class="perks-grid">
+          <li class="fade"><span>01</span>Skrypt szkoleniowy</li>
+          <li class="fade d1"><span>02</span>Ogromną dawkę wiedzy teoretycznej i praktycznej</li>
+          <li class="fade d2"><span>03</span>Zdjęcia i filmy ze szkolenia na Twoje social media</li>
+          <li class="fade d3"><span>04</span>Opiekę poszkoleniową</li>
+          <li class="fade d4"><span>05</span>Certyfikat</li>
+        </ul>
+        <p class="medipay fade">Płatność za szkolenia możesz rozłożyć na wygodne raty dzięki systemowi
+          <strong>MediPay</strong>.</p>
       </div>
-      <div class="opinie-grid">
-        <div class="opinia fade d1">
-          <div class="opinia-stars">★★★★★</div>
-          <p class="opinia-text">"Jestem bardzo zadowolona z efektu! Brwi mają idealny kształt, są naturalne i
-            dopasowane do twarzy. Zabieg wykonany profesjonalnie i w miłej atmosferze."</p>
-          <div>
-            <div class="opinia-name">Karolina</div>
-            <div class="opinia-detail">Farbka brwi u Anity · Booksy</div>
-          </div>
+
+      <div class="ask fade">
+        <p>Masz pytania dotyczące szkoleń, pakietów ślubnych lub makijażu permanentnego, chcesz poznać dostępne
+          terminy lub dowiedzieć się więcej o płatności ratalnej w systemie MediPay? Skontaktuj się z nami. Chętnie
+          odpowiemy na Twoje pytania.</p>
+        <div class="btn-row">
+          <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" rel="noopener" class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
+            </svg>Instagram</a>
+          <a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank" rel="noopener"
+            class="btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" />
+            </svg>Facebook</a>
+          <a href="#formularz" class="btn btn-dark">Napisz do nas</a>
         </div>
-        <div class="opinia fade d2">
-          <div class="opinia-stars">★★★★★</div>
-          <p class="opinia-text">"Bardzo polecam wizytę. Profesjonalne podejście do klienta, miła obsługa i świetna
-            jakość wykonania. Pani Ewelina doradziła mi idealną fryzurę i jestem zachwycony efektem. Na pewno jeszcze
-            nie raz wrócę!"</p>
-          <div>
-            <div class="opinia-name">Wojciech</div>
-            <div class="opinia-detail">Strzyżenie włosów i brody u Eweliny · Booksy</div>
-          </div>
-        </div>
-        <div class="opinia fade d3">
-          <div class="opinia-stars">★★★★★</div>
-          <p class="opinia-text">"Paznokcie wykonane starannie i w przemiłej atmosferze. Nie mam zastrzeżeń, każda
-            stylizacja dokładnie omówiona i dopracowana. Przede wszystkim schludnie wykonana i trwała, polecam
-            serdecznie."</p>
-          <div>
-            <div class="opinia-name">Ewelina</div>
-            <div class="opinia-detail">Żel na naturalnej płytce u Anety · Booksy</div>
-          </div>
-        </div>
-      </div>
-      <div class="opinie-more fade d4">
-        <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki?do=invite&utm_medium=merchant_customer_invite#reviews-section"
-          target="_blank" rel="noopener">Zobacz wszystkie opinie na Booksy
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <polyline points="12 5 19 12 12 19" />
-          </svg>
-        </a>
       </div>
     </div>
   </section>
 
   <!-- KONTAKT -->
-  <section class="kontakt" id="kontakt">
+  <section class="section" id="kontakt">
+    <div class="container contact-grid">
+      <div>
+        <span class="label fade">Kontakt</span>
+        <h2 class="h2 fade d1">Zapraszamy</h2>
+      </div>
+      <dl class="fade d2">
+        <div class="crow">
+          <dt>Adres</dt>
+          <dd><a href="https://www.google.com/maps/search/?api=1&query=Aleksandry+Pi%C5%82sudskiej+11+Suwa%C5%82ki"
+              target="_blank" rel="noopener">ul. Aleksandry Piłsudskiej 11 lok. U2, Suwałki</a></dd>
+        </div>
+        <div class="crow">
+          <dt>Telefon</dt>
+          <dd><a href="tel:+48508024343">508 02 43 43</a></dd>
+        </div>
+        <div class="crow">
+          <dt>Zapisy</dt>
+          <dd><a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki" target="_blank"
+              rel="noopener">Booksy</a></dd>
+        </div>
+        <div class="crow">
+          <dt>Social media</dt>
+          <dd><a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank"
+              rel="noopener">Facebook</a><span class="sep">·</span><a
+              href="https://www.instagram.com/beautyupsuwalki/" target="_blank" rel="noopener">Instagram</a></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- FORMULARZ -->
+  <section class="section alt" id="formularz">
     <div class="container">
-      <div class="kontakt-header">
-        <span class="section-label fade">Kontakt</span>
-        <h2 class="section-h2 fade d1">Znajdź nas</h2>
+      <div class="form-head">
+        <h2 class="h2 fade">Masz pytania?</h2>
+        <p class="fade d1">Dotyczące szkoleń, pakietów ślubnych lub makijażu permanentnego? Skontaktuj się z nami.
+          Chętnie Ci pomożemy.</p>
       </div>
-      <div class="kontakt-grid">
-        <div class="kontakt-block fade d1">
-          <h3 class="kontakt-title">Umów wizytę</h3>
-          <p class="kontakt-sub">Rezerwacja online przez Booksy lub kontakt telefoniczny.</p>
-          <div class="kontakt-row">
-            <span class="kontakt-icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.41 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.59a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </span>
-            <a href="tel:508024343">508 024 343</a>
-          </div>
-          <a href="https://booksy.com/pl-pl/236494_beautyup_salon-kosmetyczny_6623_suwalki#ba_s=seo" target="_blank"
-            class="k-btn">Zarezerwuj przez Booksy</a>
-          <a href="tel:508024343" class="k-btn-ol">Zadzwoń: 508 024 343</a>
+
+      <form class="cform fade d2" id="cform" novalidate>
+        <input type="hidden" name="access_key" value="WEB3FORMS_KEY">
+        <input type="hidden" name="subject" value="Nowa wiadomość ze strony Beauty Up">
+        <input type="hidden" name="from_name" value="Strona Beauty Up">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+        <div class="field full">
+          <input type="text" id="f-name" name="name" autocomplete="name" required>
+          <label for="f-name">Imię i nazwisko</label>
         </div>
-        <div class="kontakt-block fade d2">
-          <h3 class="kontakt-title">Odwiedź nas</h3>
-          <p class="kontakt-sub">Salon znajdziesz w centrum Suwałk.</p>
-          <div class="kontakt-row">
-            <span class="kontakt-icon">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-            </span>
-            <a href="https://share.google/OuTMThSdAcSJXDFJ5" target="_blank">ul. Aleksandry Piłsudskiej 11 lok. 2,
-              Suwałki</a>
-          </div>
-          <a href="https://share.google/OuTMThSdAcSJXDFJ5" target="_blank" class="k-btn">Zobacz na mapie</a>
-          <div class="k-btn-row">
-            <a href="https://www.instagram.com/beautyupsuwalki/" target="_blank" class="k-btn-ol">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-              </svg>
-              Instagram
-            </a>
-            <a href="https://www.facebook.com/p/BeautyUp-100065514400341/?locale=pl_PL" target="_blank"
-              class="k-btn-ol">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-              </svg>
-              Facebook
-            </a>
-          </div>
+        <div class="field">
+          <input type="email" id="f-email" name="email" autocomplete="email" required>
+          <label for="f-email">Adres e-mail</label>
         </div>
-      </div>
+        <div class="field">
+          <div class="phone-wrap">
+            <span>+48</span>
+            <input type="tel" id="f-phone" name="phone" autocomplete="tel-national" inputmode="tel">
+          </div>
+          <label for="f-phone">Numer telefonu</label>
+        </div>
+        <div class="field full">
+          <textarea id="f-msg" name="message" rows="4" required></textarea>
+          <label for="f-msg">Treść wiadomości</label>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="f-consent" required>
+          <span>Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na wiadomość. Więcej w <a href="#"
+              class="pp-open">polityce prywatności</a>.</span>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-dark" id="f-submit">Wyślij wiadomość</button>
+          <p class="form-msg" id="f-msg-out" role="status" aria-live="polite"></p>
+        </div>
+      </form>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <span class="footer-logo">Beauty Up</span>
-        <a href="#" class="footer-pp" id="pp-link">Polityka prywatności</a>
-      </div>
+    <div class="container footer-inner">
+      <span class="footer-logo">Beauty Up</span>
+      <button type="button" class="footer-pp pp-open">Polityka prywatności</button>
     </div>
   </footer>
 
   <div class="pp-overlay" id="pp-overlay">
-    <div class="pp-modal">
-      <button class="pp-close" id="pp-close">&#x2715;</button>
-      <h2 class="pp-title">Polityka prywatności</h2>
+    <div class="pp-modal" role="dialog" aria-modal="true" aria-labelledby="pp-title">
+      <button class="pp-close" id="pp-close" aria-label="Zamknij">&#x2715;</button>
+      <h2 class="pp-title" id="pp-title">Polityka prywatności</h2>
       <div class="pp-body">
-        <p><strong>Administrator danych:</strong> Beauty Up, ul. Aleksandry Piłsudskiej 11 lok. 2, 16-400 Suwałki,
-          tel. 508 024 343</p>
+        <p><strong>Administrator danych:</strong> Beauty Up Anita Grzędzińska, ul. Aleksandry Piłsudskiej 11 lok. U2,
+          16-400 Suwałki, tel. 508 02 43 43</p>
         <h3>Cel i podstawa przetwarzania danych</h3>
-        <p>Dane kontaktowe podane podczas kontaktu telefonicznego, przez media społecznościowe lub Booksy przetwarzane
-          są wyłącznie w celu realizacji usług lub umówienia wizyty, na podstawie art. 6 ust. 1 lit. b RODO (wykonanie
-          umowy lub działania podejmowane przed jej zawarciem). Dane nie są wykorzystywane w celach marketingowych bez
-          odrębnej zgody i nie są sprzedawane ani udostępniane innym firmom.</p>
+        <p>Dane kontaktowe podane podczas kontaktu telefonicznego, przez media społecznościowe, Booksy lub formularz
+          kontaktowy na stronie przetwarzane są wyłącznie w celu odpowiedzi na wiadomość, realizacji usług lub
+          umówienia wizyty, na podstawie art. 6 ust. 1 lit. a i b RODO (zgoda oraz działania podejmowane przed
+          zawarciem umowy). Dane nie są wykorzystywane w celach marketingowych bez odrębnej zgody i nie są sprzedawane
+          ani udostępniane innym firmom.</p>
+        <h3>Formularz kontaktowy</h3>
+        <p>Wiadomości z formularza (imię i nazwisko, adres e-mail, numer telefonu, treść) są przekazywane na naszą
+          skrzynkę e-mail za pośrednictwem usługi Web3Forms, która działa jako podmiot przetwarzający dane wyłącznie
+          w celu dostarczenia wiadomości.</p>
         <h3>Okres przechowywania danych</h3>
-        <p>Dane przechowywane są przez okres niezbędny do realizacji usługi lub umówienia wizyty, a po jego
-          zakończeniu przez okres wynikający z obowiązujących przepisów prawa (np. podatkowych), jeśli mają
-          zastosowanie.</p>
+        <p>Dane przechowywane są przez okres niezbędny do udzielenia odpowiedzi, realizacji usługi lub umówienia
+          wizyty, a po jego zakończeniu przez okres wynikający z obowiązujących przepisów prawa (np. podatkowych), jeśli
+          mają zastosowanie.</p>
         <h3>Hosting i dostawcy technologii</h3>
         <p>Strona korzysta z czcionek Google Fonts oraz jest hostowana i chroniona przez Cloudflare. W obu przypadkach
           przeglądarka użytkownika nawiązuje połączenie z serwerami tych dostawców, przekazując adres IP w celu
           prawidłowego wyświetlenia i zabezpieczenia strony. Google LLC oraz Cloudflare, Inc. są odrębnymi
           administratorami tych danych technicznych.</p>
         <h3>Prawa użytkownika</h3>
-        <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz
-          przenoszenia danych. Przysługuje Ci również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych
-          Osobowych. W sprawie danych osobowych skontaktuj się pod numer 508 024 343.</p>
+        <p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia
+          danych oraz cofnięcia zgody w dowolnym momencie. Przysługuje Ci również prawo wniesienia skargi do Prezesa
+          Urzędu Ochrony Danych Osobowych. W sprawie danych osobowych skontaktuj się pod numerem 508 02 43 43.</p>
       </div>
     </div>
   </div>
 
   <script>
-    // Hamburger
+    // Nav - tło po zjechaniu z hero
+    const nav = document.getElementById('nav');
+    const hero = document.querySelector('.hero');
+    const setNav = () => {
+      nav.classList.toggle('scrolled', window.scrollY > hero.offsetHeight - nav.offsetHeight - 10);
+    };
+    setNav();
+    window.addEventListener('scroll', setNav, { passive: true });
+    window.addEventListener('resize', setNav);
+
+    // Hamburger + mobile menu
     const hamburger = document.getElementById('hamburger');
     const mmenu = document.getElementById('mmenu');
+    const closeMenu = () => {
+      hamburger.classList.remove('open');
+      mmenu.classList.remove('open');
+      nav.classList.remove('menu-open');
+      document.body.classList.remove('lock');
+      hamburger.setAttribute('aria-expanded', 'false');
+    };
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      mmenu.classList.toggle('open');
+      const open = !mmenu.classList.contains('open');
+      if (!open) return closeMenu();
+      hamburger.classList.add('open');
+      mmenu.classList.add('open');
+      nav.classList.add('menu-open');
+      document.body.classList.add('lock');
+      hamburger.setAttribute('aria-expanded', 'true');
     });
-    mmenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        mmenu.classList.remove('open');
-      });
-    });
+    mmenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-    // Svc more links
-    document.querySelectorAll('.svc-more').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const tabName = link.dataset.tab;
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-        const btn = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
-        const panel = document.getElementById('panel-' + tabName);
-        btn.classList.add('active');
-        panel.classList.add('active');
-        animatePriceItems(panel, 0);
-        document.getElementById('cennik').scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Cennik tabs
-    function animatePriceItems(panel, baseDelay) {
-      panel.querySelectorAll('.price-item, .price-group-label').forEach((el, i) => {
-        el.classList.remove('on');
-        el.style.transitionDelay = (baseDelay + i * 0.05) + 's';
-        requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('on')));
-      });
-    }
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        const panel = document.getElementById('panel-' + btn.dataset.tab);
-        panel.classList.add('active');
-        animatePriceItems(panel, 0);
-      });
-    });
-
-    // IntersectionObserver - fade elements
-    const fadeObs = new IntersectionObserver((entries) => {
+    // Fade on scroll
+    const fadeObs = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('on');
@@ -2340,58 +2049,82 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade').forEach(el => fadeObs.observe(el));
 
-    // IntersectionObserver - service cards (osobny stagger)
-    document.querySelectorAll('.svc-card').forEach((el, i) => {
-      el.style.transitionDelay = (i * 0.12) + 's';
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('svc-on');
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.08 });
-      obs.observe(el);
-    });
-
-    // Cennik - animacja przy wejściu w viewport
-    const cennikObs = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const active = document.querySelector('.tab-panel.active');
-          animatePriceItems(active, 0.5);
-          cennikObs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    cennikObs.observe(document.querySelector('.cennik'));
-
-    // Polityka prywatnosci modal
-    document.getElementById('pp-link').addEventListener('click', e => {
+    // Polityka prywatności
+    const ppOverlay = document.getElementById('pp-overlay');
+    document.querySelectorAll('.pp-open').forEach(el => el.addEventListener('click', e => {
       e.preventDefault();
-      document.getElementById('pp-overlay').classList.add('active');
+      ppOverlay.classList.add('active');
+    }));
+    document.getElementById('pp-close').addEventListener('click', () => ppOverlay.classList.remove('active'));
+    ppOverlay.addEventListener('click', e => {
+      if (e.target === e.currentTarget) ppOverlay.classList.remove('active');
     });
-    document.getElementById('pp-close').addEventListener('click', () => {
-      document.getElementById('pp-overlay').classList.remove('active');
-    });
-    document.getElementById('pp-overlay').addEventListener('click', e => {
-      if (e.target === e.currentTarget) e.currentTarget.classList.remove('active');
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        ppOverlay.classList.remove('active');
+        closeMenu();
+      }
     });
 
-    // Szkolenia - proof video (play + fullscreen)
-    document.querySelectorAll('.proof-video').forEach(wrap => {
-      const video = wrap.querySelector('video');
-      const togglePlay = () => video.paused ? video.play() : video.pause();
-      wrap.querySelector('.proof-play').addEventListener('click', togglePlay);
-      video.addEventListener('click', togglePlay);
-      video.addEventListener('play', () => wrap.classList.add('is-playing'));
-      video.addEventListener('pause', () => wrap.classList.remove('is-playing'));
-      video.addEventListener('ended', () => wrap.classList.remove('is-playing'));
-      wrap.querySelector('.proof-fs').addEventListener('click', e => {
-        e.stopPropagation();
-        if (video.requestFullscreen) video.requestFullscreen();
-        else if (video.webkitEnterFullscreen) video.webkitEnterFullscreen();
-      });
+    // Formularz - Web3Forms
+    const form = document.getElementById('cform');
+    const out = document.getElementById('f-msg-out');
+    const submitBtn = document.getElementById('f-submit');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      out.className = 'form-msg';
+      out.textContent = '';
+
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const msg = form.message.value.trim();
+      if (!name || !email || !msg) {
+        out.classList.add('err');
+        out.textContent = 'Uzupełnij imię i nazwisko, adres e-mail oraz treść wiadomości.';
+        return;
+      }
+      if (!form.email.checkValidity()) {
+        out.classList.add('err');
+        out.textContent = 'Sprawdź poprawność adresu e-mail.';
+        return;
+      }
+      if (!document.getElementById('f-consent').checked) {
+        out.classList.add('err');
+        out.textContent = 'Zaznacz zgodę na przetwarzanie danych.';
+        return;
+      }
+
+      const data = Object.fromEntries(new FormData(form));
+      if (data.phone) data.phone = '+48 ' + data.phone.trim();
+      if (data.access_key === 'WEB3FORMS_KEY') {
+        out.classList.add('err');
+        out.textContent = 'Formularz będzie aktywny wkrótce. Zadzwoń: 508 02 43 43.';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Wysyłanie...';
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const json = await res.json();
+        if (json.success) {
+          form.reset();
+          out.classList.add('ok');
+          out.textContent = 'Dziękujemy! Wiadomość została wysłana. Odezwiemy się najszybciej, jak to możliwe.';
+        } else {
+          throw new Error();
+        }
+      } catch {
+        out.classList.add('err');
+        out.textContent = 'Nie udało się wysłać wiadomości. Spróbuj ponownie lub zadzwoń: 508 02 43 43.';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Wyślij wiadomość';
+      }
     });
   </script>
 </body>
