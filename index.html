@@ -197,11 +197,7 @@
       transform: none;
     }
 
-    .d1 { transition-delay: 0.1s; }
-    .d2 { transition-delay: 0.2s; }
-    .d3 { transition-delay: 0.3s; }
-    .d4 { transition-delay: 0.4s; }
-    .d5 { transition-delay: 0.5s; }
+    /* opóźnienia liczy JS (kolejka z góry na dół), nie klasy .d1-.d5 */
 
     /* NAV */
     .nav {
@@ -2038,16 +2034,49 @@
     });
     mmenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-    // Fade on scroll
+    // Fade on scroll - zawsze w kolejności z góry na dół
+    const fades = [...document.querySelectorAll('.fade')];
+    let revealed = 0;          // wszystko przed tym indeksem jest już pokazane
+    let pending = new Set();   // elementy, które weszły w ekran i czekają na swoją kolej
+    let frame = null;
+
+    const showInstant = el => {
+      el.style.transition = 'none';
+      el.classList.add('on');
+      fadeObs.unobserve(el);
+    };
+
+    const flush = () => {
+      frame = null;
+      if (!pending.size) return;
+      // najniższy element, który ma się pokazać
+      const maxIdx = Math.max(...[...pending].map(el => fades.indexOf(el)));
+      let step = 0;
+      for (let i = revealed; i <= maxIdx; i++) {
+        const el = fades[i];
+        if (el.classList.contains('on')) continue;
+        const r = el.getBoundingClientRect();
+        if (r.bottom < 0) {
+          // przeskoczony (np. klik w nav) - pokaż od razu, bez animacji
+          showInstant(el);
+        } else {
+          el.style.transitionDelay = Math.min(step * 0.09, 0.45) + 's';
+          el.classList.add('on');
+          fadeObs.unobserve(el);
+          step++;
+        }
+      }
+      revealed = maxIdx + 1;
+      pending.clear();
+    };
+
     const fadeObs = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('on');
-          fadeObs.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) pending.add(entry.target);
       });
+      if (pending.size && !frame) frame = requestAnimationFrame(flush);
     }, { threshold: 0.08 });
-    document.querySelectorAll('.fade').forEach(el => fadeObs.observe(el));
+    fades.forEach(el => fadeObs.observe(el));
 
     // Polityka prywatności
     const ppOverlay = document.getElementById('pp-overlay');
