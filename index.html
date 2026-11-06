@@ -501,16 +501,6 @@
       line-height: 1.6;
     }
 
-    .team-role {
-      display: block;
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 0.02em;
-      text-transform: none;
-      color: var(--muted);
-      margin-top: 6px;
-    }
-
     .svc-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -809,14 +799,13 @@
 
     .ask {
       margin-top: 72px;
-      padding: 56px 48px;
-      background: #fff;
       text-align: center;
     }
 
     .ask p {
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 400;
+      color: var(--text);
       line-height: 1.6;
       max-width: 720px;
       margin: 0 auto 30px;
@@ -828,6 +817,16 @@
       gap: 12px;
       justify-content: center;
       flex-wrap: wrap;
+    }
+
+    .ask .btn:not(.btn-dark) {
+      border-color: transparent;
+      padding: 12px 20px;
+    }
+
+    .ask .btn:not(.btn-dark):hover {
+      background: transparent;
+      color: var(--accent);
     }
 
     .btn svg {
@@ -853,12 +852,7 @@
       grid-template-columns: 160px 1fr;
       gap: 20px;
       padding: 22px 0;
-      border-top: 1px solid var(--line);
       align-items: baseline;
-    }
-
-    .crow:last-child {
-      border-bottom: 1px solid var(--line);
     }
 
     .crow dt {
@@ -878,12 +872,11 @@
     }
 
     .crow dd a {
-      border-bottom: 1px solid var(--line);
-      transition: border-color 0.25s;
+      transition: color 0.25s;
     }
 
     .crow dd a:hover {
-      border-color: var(--text);
+      color: var(--accent);
     }
 
     .crow dd .sep {
@@ -1238,7 +1231,7 @@
       }
 
       .hero-tags {
-        margin-top: 22px;
+        margin-top: 64px;
       }
 
       .hero-tags li {
@@ -1348,7 +1341,6 @@
 
       .ask {
         margin-top: 52px;
-        padding: 40px 22px;
       }
 
       .ask p {
@@ -1358,6 +1350,10 @@
       .btn-row {
         flex-direction: column;
         align-items: stretch;
+      }
+
+      .ask .btn-dark {
+        margin-top: 8px;
       }
 
       .contact-grid .h2 {
@@ -1487,7 +1483,7 @@
   </section>
 
   <!-- OFERTA -->
-  <section class="section alt" id="oferta">
+  <section class="section" id="oferta">
     <div class="container">
       <div class="sec-head">
         <span class="label fade">Oferta</span>
@@ -1496,8 +1492,7 @@
 
       <div class="team">
         <div class="fade">
-          <h3 class="team-name">Anita Grzędzińska<span class="team-role">makijaż permanentny, brwi, makijaż,
-              szkolenia</span></h3>
+          <h3 class="team-name">Anita Grzędzińska</h3>
         </div>
         <div class="svc-list">
           <article class="svc fade d1">
@@ -1542,7 +1537,7 @@
 
       <div class="team">
         <div class="fade">
-          <h3 class="team-name">Ewelina Majewska<span class="team-role">barber</span></h3>
+          <h3 class="team-name">Ewelina Majewska</h3>
         </div>
         <div class="svc-list">
           <article class="svc fade d1">
@@ -1560,8 +1555,7 @@
 
       <div class="team">
         <div class="fade">
-          <h3 class="team-name">Żaneta Heksel<br>Aneta Walendzewicz<span class="team-role">stylizacja paznokci</span>
-          </h3>
+          <h3 class="team-name">Żaneta Heksel<br>Aneta Walendzewicz</h3>
         </div>
         <div class="svc-list">
           <article class="svc fade d1">
@@ -1580,7 +1574,7 @@
 
       <div class="team">
         <div class="fade">
-          <h3 class="team-name">Martyna Leszczyńska<span class="team-role">fryzjerstwo</span></h3>
+          <h3 class="team-name">Martyna Leszczyńska</h3>
         </div>
         <div class="svc-list">
           <article class="svc fade d1">
@@ -1912,7 +1906,7 @@
   </section>
 
   <!-- FORMULARZ -->
-  <section class="section alt" id="formularz">
+  <section class="section" id="formularz">
     <div class="container">
       <div class="form-head">
         <h2 class="h2 fade">Masz pytania?</h2>
